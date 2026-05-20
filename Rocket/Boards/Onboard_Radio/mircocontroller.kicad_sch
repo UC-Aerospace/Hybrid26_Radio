@@ -3840,7 +3840,7 @@
 	)
 	(text "check these are gpio"
 		(exclude_from_sim no)
-		(at 213.36 137.16 0)
+		(at 212.598 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3908,12 +3908,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9ba4c4df-2371-4c16-80ac-971960bd8bd2")
-	)
-	(junction
-		(at 107.95 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9ea46808-4275-4221-b466-6538c5ee64ac")
 	)
 	(junction
 		(at 135.89 39.37)
@@ -4317,16 +4311,6 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 53.34) (xy 113.03 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39fffe6f-2661-47d3-a11a-ca559e610bd0")
-	)
-	(wire
-		(pts
 			(xy 195.58 90.17) (xy 207.01 90.17)
 		)
 		(stroke
@@ -4567,7 +4551,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 53.34) (xy 107.95 53.34)
+			(xy 104.14 53.34) (xy 113.03 53.34)
 		)
 		(stroke
 			(width 0)
@@ -6031,7 +6015,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 116.5352 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -7703,7 +7687,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 106.3752 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -8292,84 +8276,6 @@
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/c4af6750-4012-4fcb-85b8-6e0235f41ddd"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint_Small")
-		(at 107.95 53.34 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "68835502-9e04-4742-ac0e-e4418e7e04ed")
-		(property "Reference" "TP1"
-			(at 109.22 52.0699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BOOT0"
-			(at 108.966 50.038 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 113.03 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 113.03 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 107.95 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "27e746d8-c7d2-4a79-bc48-60342957c47c")
-		)
-		(instances
-			(project "rf_rocket_module"
-				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/c4af6750-4012-4fcb-85b8-6e0235f41ddd"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -9303,7 +9209,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 102.362 57.15 90)
 			(hide yes)
 			(show_name no)
@@ -10075,7 +9981,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 97.79 33.02 0)
 			(hide yes)
 			(show_name no)

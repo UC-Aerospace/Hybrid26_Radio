@@ -1497,7 +1497,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 138.43 37.338 90)
 			(hide yes)
 			(show_name no)
@@ -1654,7 +1654,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 58.42 31.242 90)
 			(hide yes)
 			(show_name no)
@@ -1736,7 +1736,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 74.93 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -2023,7 +2023,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 83.82 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -2165,7 +2165,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 58.42 29.718 90)
 			(hide yes)
 			(show_name no)
@@ -2386,7 +2386,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 58.42 24.638 90)
 			(hide yes)
 			(show_name no)
@@ -2610,7 +2610,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 64.77 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -2911,7 +2911,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 74.93 168.91 0)
 			(hide yes)
 			(show_name no)

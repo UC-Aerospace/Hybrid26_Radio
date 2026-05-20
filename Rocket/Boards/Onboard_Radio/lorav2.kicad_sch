@@ -2134,7 +2134,7 @@
 	)
 	(text "CHECK IF THIS IS GPIO OR REQUIRES MORE CURRENT"
 		(exclude_from_sim no)
-		(at 199.39 67.564 0)
+		(at 240.284 69.596 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2616,6 +2616,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 138.43) (xy 27.94 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b262f88-c4fa-474b-8b39-3494bcfc08a5")
+	)
+	(wire
+		(pts
 			(xy 92.71 87.63) (xy 92.71 78.74)
 		)
 		(stroke
@@ -2673,6 +2683,16 @@
 			(type default)
 		)
 		(uuid "7d808742-7489-4b1a-b4a4-3a1a02cf5379")
+	)
+	(wire
+		(pts
+			(xy 26.67 137.16) (xy 26.67 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "801279ec-ef50-41b4-b42c-f7a7c525164d")
 	)
 	(wire
 		(pts
@@ -3209,6 +3229,17 @@
 			(justify right)
 		)
 		(uuid "c7582296-fdb7-4c86-97e9-a303506a522a")
+	)
+	(hierarchical_label "+3V3A"
+		(shape input)
+		(at 27.94 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d35c7d2f-baf3-48da-be85-4a22fad4014a")
 	)
 	(hierarchical_label "MISO"
 		(shape input)
@@ -7547,6 +7578,84 @@
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/ec17b761-2334-4457-8873-4c3a71db4204"
 					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 26.67 137.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca9152ed-57be-4528-b313-008cb0950b23")
+		(property "Reference" "#PWR048"
+			(at 26.67 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_RADIO"
+			(at 26.67 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 26.67 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ad942a77-1dec-4f94-b029-7d2e4f49a3e2")
+		)
+		(instances
+			(project "rf_rocket_module"
+				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/ec17b761-2334-4457-8873-4c3a71db4204"
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
