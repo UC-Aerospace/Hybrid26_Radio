@@ -967,16 +967,18 @@
 		(uuid "6c66fbdc-d3b8-401b-b69a-8b64bc47cb61")
 	)
 	(no_connect
-		(at 58.42 88.9)
-		(uuid "75868916-1e80-45ff-91f4-72a75da48414")
-	)
-	(no_connect
 		(at 153.67 43.18)
 		(uuid "957975b8-1696-4392-81c9-f604a4297695")
 	)
-	(no_connect
-		(at 58.42 91.44)
-		(uuid "baf75b06-2edc-4d71-9ef8-5d0d8a42ffa3")
+	(wire
+		(pts
+			(xy 53.34 88.9) (xy 77.47 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "095b393d-d981-4e43-9e2e-015c7cd7a780")
 	)
 	(wire
 		(pts
@@ -1160,16 +1162,6 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 88.9) (xy 58.42 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a123d75-7bad-422c-a4ac-5ae9a8a3fd58")
-	)
-	(wire
-		(pts
 			(xy 69.85 152.4) (xy 69.85 154.94)
 		)
 		(stroke
@@ -1270,13 +1262,13 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 91.44) (xy 58.42 91.44)
+			(xy 53.34 91.44) (xy 77.47 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e1f0e254-78b0-4655-bdb9-cb89ac5bd5a0")
+		(uuid "e1022b71-5e75-4d24-876c-2c5e1e576d02")
 	)
 	(wire
 		(pts
@@ -1714,7 +1706,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ead3b72-dc5a-45cb-8e6c-13e7205b6e82")
-		(property "Reference" "TP4"
+		(property "Reference" "TP2"
 			(at 82.55 156.9719 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1841,7 +1833,7 @@
 		(instances
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35"
-					(reference "TP4")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -1854,7 +1846,7 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board no)
+		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4057a99a-8104-4db8-9441-8226567a676f")
@@ -2001,7 +1993,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58e32803-8c63-4a37-a351-8a8b7c462941")
-		(property "Reference" "TP5"
+		(property "Reference" "TP3"
 			(at 91.44 156.9719 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2128,7 +2120,7 @@
 		(instances
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35"
-					(reference "TP5")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -2220,7 +2212,7 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board no)
+		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7900f423-399f-4d5c-a41d-f5f82544226b")
@@ -2441,7 +2433,7 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board no)
+		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8b9e9225-fe0b-44bd-a7de-5e9757bf54c4")
@@ -2588,7 +2580,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a32aab81-99e7-4d65-9cb7-c72bafeac301")
-		(property "Reference" "TP3"
+		(property "Reference" "TP1"
 			(at 72.39 156.9719 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2715,7 +2707,7 @@
 		(instances
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35"
-					(reference "TP3")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -2889,7 +2881,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c0357534-b928-42ea-b4d5-02e3d6d993c3")
-		(property "Reference" "TP6"
+		(property "Reference" "TP4"
 			(at 72.39 164.3379 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3016,7 +3008,7 @@
 		(instances
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35"
-					(reference "TP6")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -3207,7 +3199,7 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board no)
+		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f63c9a25-11c3-4845-b78e-4a49e4cc245b")
@@ -3718,6 +3710,16 @@
 				(justify left top)
 			)
 		)
+		(pin "SX_NRESET" input
+			(at 157.48 35.56 180)
+			(uuid "2902c827-f4a2-4138-bac3-d7d2430c02c3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "DIO3" input
 			(at 157.48 43.18 180)
 			(uuid "4257b261-eed6-4383-bccb-412f6d52422b")
@@ -3768,6 +3770,16 @@
 				(justify left)
 			)
 		)
+		(pin "NSS" input
+			(at 157.48 33.02 180)
+			(uuid "400ec96d-e86c-46ef-aefe-e759848cf336")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "BUSY" input
 			(at 157.48 30.48 180)
 			(uuid "79981451-28da-4fda-b14d-9cfbc32bf366")
@@ -3791,26 +3803,6 @@
 		(pin "ANT_SW" input
 			(at 157.48 45.72 180)
 			(uuid "9992047c-055f-486b-aea5-32ceb2d1d890")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "NSS" input
-			(at 157.48 54.61 180)
-			(uuid "a08752c6-abf4-4981-a4b3-e3eaf05cf889")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SX_NRESET" input
-			(at 157.48 35.56 180)
-			(uuid "169c83be-d0a7-44cf-b814-de581360a76f")
 			(effects
 				(font
 					(size 1.27 1.27)

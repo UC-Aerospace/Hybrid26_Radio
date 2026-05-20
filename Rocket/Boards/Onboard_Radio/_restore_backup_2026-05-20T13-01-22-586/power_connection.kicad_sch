@@ -601,7 +601,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9fbe13cf-c825-4a9e-b487-7bdfedaeb044")
-		(property "Reference" "J5"
+		(property "Reference" "J7"
 			(at 125.73 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -621,7 +621,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
+		(property "Footprint" ""
 			(at 125.73 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -681,7 +681,7 @@
 		(instances
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/abcae1e2-b29e-4289-bda9-47e90da98056"
-					(reference "J5")
+					(reference "J7")
 					(unit 1)
 				)
 			)
