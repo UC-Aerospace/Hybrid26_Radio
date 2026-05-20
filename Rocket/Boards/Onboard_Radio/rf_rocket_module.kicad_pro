@@ -729,7 +729,7 @@
         }
       ],
       "filter_string": "",
-      "group_symbols": false,
+      "group_symbols": true,
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
@@ -784,7 +784,7 @@
         "uuid": "4940ffbe-f45f-4917-a247-12e2b32b6c35"
       }
     ],
-    "used_designators": "#PWR48",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
