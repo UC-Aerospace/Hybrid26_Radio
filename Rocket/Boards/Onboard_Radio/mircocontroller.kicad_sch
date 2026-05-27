@@ -3802,16 +3802,6 @@
 		)
 		(uuid "3be4f818-8e7d-4061-ae3b-ab073a371b4b")
 	)
-	(text "WTF IS THIS GOING TO GND????"
-		(exclude_from_sim no)
-		(at 207.264 51.308 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8facd643-b4d0-4f1f-8fae-9d76e6d0d60c")
-	)
 	(text "SWD"
 		(exclude_from_sim no)
 		(at 122.174 161.036 0)
