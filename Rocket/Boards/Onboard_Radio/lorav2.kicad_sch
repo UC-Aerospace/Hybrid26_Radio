@@ -4,6 +4,11 @@
 	(generator_version "10.0")
 	(uuid "8497c69d-d695-45e3-bd47-df2512f90f7d")
 	(paper "A4")
+	(title_block
+		(title "Radio IC")
+		(date "2026-05-28")
+		(rev "A")
+	)
 	(lib_symbols
 		(symbol "Amplifier_Current:NCS213"
 			(exclude_from_sim no)

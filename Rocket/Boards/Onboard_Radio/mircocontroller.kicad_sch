@@ -6,6 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Radio Microcontroller")
+		(date "2026-05-28")
 		(company "2026 Hybrid Rocket")
 		(comment 1 "Drawn by: Joella Tomkins")
 	)
@@ -5169,16 +5170,27 @@
 		)
 		(uuid "f80b23e1-20a4-4416-b663-77fff413507c")
 	)
-	(hierarchical_label "FDCAN1_TX"
+	(hierarchical_label "CAN1_RX"
 		(shape input)
-		(at 182.88 123.19 0)
+		(at 182.88 125.73 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "12e9cece-4793-4a5d-ae75-e60aceaaf4c7")
+		(uuid "064137c3-26c4-4da7-b648-375fb68a8dff")
+	)
+	(hierarchical_label "CAN_STB1"
+		(shape input)
+		(at 83.82 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "10d7a3e3-615d-4c02-aa44-664cfa4a1418")
 	)
 	(hierarchical_label "SX1262_BUSY"
 		(shape input)
@@ -5202,6 +5214,17 @@
 		)
 		(uuid "3312d36a-623f-4971-bd47-97ea0dcad94f")
 	)
+	(hierarchical_label "CAN1_AUX"
+		(shape input)
+		(at 83.82 107.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4cf23ebe-3906-4dd1-965a-d4ffd3dacd04")
+	)
 	(hierarchical_label "Antenna Switch"
 		(shape input)
 		(at 184.15 135.89 0)
@@ -5212,6 +5235,17 @@
 			(justify left)
 		)
 		(uuid "62bd8a3c-42d2-4162-af5d-79fa41037a67")
+	)
+	(hierarchical_label "CAN_STB2"
+		(shape input)
+		(at 83.82 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "632675a8-93b2-4373-bc72-3f98de940f2c")
 	)
 	(hierarchical_label "SX1262_DIO1"
 		(shape input)
@@ -5224,6 +5258,17 @@
 		)
 		(uuid "6344824c-bff9-4856-8b95-c05975d416ff")
 	)
+	(hierarchical_label "CAN2_RX"
+		(shape input)
+		(at 83.82 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7b268e2c-98e6-4691-bcd2-73b2f5d666b8")
+	)
 	(hierarchical_label "SPI1_MISO"
 		(shape input)
 		(at 182.88 77.47 0)
@@ -5234,6 +5279,17 @@
 			(justify left)
 		)
 		(uuid "7cbbbf99-6c77-4fe2-af62-6050a9c1845b")
+	)
+	(hierarchical_label "CAN1_TX"
+		(shape input)
+		(at 182.88 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7d14188e-62e7-483e-99c1-8ff9f52cb17a")
 	)
 	(hierarchical_label "SPI1_SCK"
 		(shape input)
@@ -5246,16 +5302,16 @@
 		)
 		(uuid "8e26cb7f-6dea-4f08-9944-08065c4811b7")
 	)
-	(hierarchical_label "FDCAN1_RX"
+	(hierarchical_label "CAN2_TX"
 		(shape input)
-		(at 182.88 125.73 0)
+		(at 83.82 114.3 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "97bef08f-448f-4053-a806-e8c234571f7e")
+		(uuid "9fd1288f-14f8-4a67-a12b-d3081d065c0c")
 	)
 	(hierarchical_label "SX1262_RESET"
 		(shape input)
@@ -5267,6 +5323,17 @@
 			(justify left)
 		)
 		(uuid "a18bd5bf-26ba-44da-8abf-0f59dada40aa")
+	)
+	(hierarchical_label "CAN2_AUX"
+		(shape input)
+		(at 83.82 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bd823884-8be3-42f2-90ff-bc700af03ea6")
 	)
 	(hierarchical_label "SX1262_CS"
 		(shape input)

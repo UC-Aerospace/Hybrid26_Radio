@@ -271,7 +271,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "A"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -784,7 +784,7 @@
         "uuid": "4940ffbe-f45f-4917-a247-12e2b32b6c35"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR9,#PWR39-40,#PWR42-43,#PWR49-50,#PWR52-53,#PWR56-57,#PWR59-62,#PWR69,#PWR131,#PWR158,#PWR160-162,C35-38,C43,C51,J11-18,R5-6,R22-27,R69,F3-4,TP39-42,U5-6,JP3-4",
     "variants": []
   },
   "sheets": [

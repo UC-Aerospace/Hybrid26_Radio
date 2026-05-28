@@ -4,6 +4,11 @@
 	(generator_version "10.0")
 	(uuid "73a1897d-bbe5-4acc-8a07-46411ead4f78")
 	(paper "A4")
+	(title_block
+		(title "Power Input")
+		(date "2026-05-28")
+		(rev "A")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x08"
 			(pin_names
