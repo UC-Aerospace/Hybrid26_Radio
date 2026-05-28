@@ -2070,6 +2070,16 @@
 		)
 		(uuid "2f21513a-128e-46b7-ab54-6579814cc6b7")
 	)
+	(text "stm32wl"
+		(exclude_from_sim no)
+		(at 23.876 183.642 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b3c9850d-6459-4ba0-91b5-97f816e3165b")
+	)
 	(text "Antenna Matching & Filtering"
 		(exclude_from_sim no)
 		(at 247.142 89.154 0)
