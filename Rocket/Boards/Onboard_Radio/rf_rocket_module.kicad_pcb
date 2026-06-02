@@ -25908,6 +25908,19 @@
 		(layer "Edge.Cuts")
 		(uuid "97610940-2e45-45fa-8461-8180d60f27e1")
 	)
+	(gr_text "MANUFACTURE WITH ENIG"
+		(at 15.5 18 0)
+		(layer "F.Cu")
+		(uuid "38a41344-4fb1-48c9-ae50-35a4579f5dc6")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(segment
 		(start 128.175 106.55)
 		(end 129.625 106.55)
