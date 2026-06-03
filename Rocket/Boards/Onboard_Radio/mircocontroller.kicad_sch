@@ -3853,12 +3853,6 @@
 		(uuid "d3b0fadc-cc70-43b2-b828-df99bc05101a")
 	)
 	(junction
-		(at 151.13 193.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "15896eb3-71d5-46a8-9965-1ccd2fed63db")
-	)
-	(junction
 		(at 173.99 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3999,20 +3993,12 @@
 		(uuid "1625f728-1e19-4209-9cc8-accfe87be0ec")
 	)
 	(no_connect
-		(at 173.99 85.09)
-		(uuid "19dd1f25-f43e-4af8-af3f-1f657f91a242")
-	)
-	(no_connect
 		(at 123.19 100.33)
 		(uuid "1d3e6cb0-6ef8-4ac1-8b8c-4ee887a302f0")
 	)
 	(no_connect
 		(at 123.19 87.63)
 		(uuid "26516f89-1528-4ab3-b882-5306edbf03fb")
-	)
-	(no_connect
-		(at 173.99 82.55)
-		(uuid "2ee455e8-ac4c-4ae4-a441-7747fcc776bd")
 	)
 	(no_connect
 		(at 173.99 133.35)
@@ -4077,10 +4063,6 @@
 	(no_connect
 		(at 123.19 80.01)
 		(uuid "a4c42d16-05f8-4807-8196-958c8c5e2002")
-	)
-	(no_connect
-		(at 173.99 87.63)
-		(uuid "ac872ea6-b8a3-492d-b4de-95965ee1de86")
 	)
 	(no_connect
 		(at 173.99 69.85)
@@ -4183,6 +4165,16 @@
 			(type default)
 		)
 		(uuid "147cee77-ab99-45d1-aba8-034d381b3c70")
+	)
+	(wire
+		(pts
+			(xy 173.99 85.09) (xy 179.07 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "173d15b4-1fe1-4ee4-aed4-dcfaf4e1792e")
 	)
 	(wire
 		(pts
@@ -4406,16 +4398,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 193.04) (xy 156.21 193.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c6913b0-c006-4f82-8fdc-c6ab4df86831")
-	)
-	(wire
-		(pts
 			(xy 151.13 45.72) (xy 167.64 45.72)
 		)
 		(stroke
@@ -4523,6 +4505,16 @@
 			(type default)
 		)
 		(uuid "69111dac-471e-430e-b00e-940a0a08375e")
+	)
+	(wire
+		(pts
+			(xy 173.99 82.55) (xy 179.07 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c75bd38-5ea0-4dec-9a15-61924354f73b")
 	)
 	(wire
 		(pts
@@ -4956,6 +4948,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 87.63) (xy 179.07 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "deaa8d2b-306b-4674-8feb-5ef1c4e10456")
+	)
+	(wire
+		(pts
 			(xy 148.59 148.59) (xy 149.86 148.59)
 		)
 		(stroke
@@ -5215,16 +5217,16 @@
 		)
 		(uuid "064137c3-26c4-4da7-b648-375fb68a8dff")
 	)
-	(hierarchical_label "CAN_STB1"
+	(hierarchical_label "CAN1_AUX"
 		(shape input)
-		(at 83.82 93.98 180)
+		(at 179.07 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "10d7a3e3-615d-4c02-aa44-664cfa4a1418")
+		(uuid "0f028e14-76f0-4837-ba1b-49aace7b1f28")
 	)
 	(hierarchical_label "SX1262_BUSY"
 		(shape input)
@@ -5248,28 +5250,6 @@
 		)
 		(uuid "3312d36a-623f-4971-bd47-97ea0dcad94f")
 	)
-	(hierarchical_label "CAN1_AUX"
-		(shape input)
-		(at 83.82 107.95 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4cf23ebe-3906-4dd1-965a-d4ffd3dacd04")
-	)
-	(hierarchical_label "CAN_STB2"
-		(shape input)
-		(at 83.82 96.52 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "632675a8-93b2-4373-bc72-3f98de940f2c")
-	)
 	(hierarchical_label "SX1262_DIO1"
 		(shape input)
 		(at 182.88 110.49 0)
@@ -5281,16 +5261,16 @@
 		)
 		(uuid "6344824c-bff9-4856-8b95-c05975d416ff")
 	)
-	(hierarchical_label "CAN2_RX"
+	(hierarchical_label "CAN_STB1"
 		(shape input)
-		(at 83.82 116.84 180)
+		(at 179.07 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "7b268e2c-98e6-4691-bcd2-73b2f5d666b8")
+		(uuid "6f743bfb-4675-4b4e-ba9e-f3d6abff99ca")
 	)
 	(hierarchical_label "SPI1_MISO"
 		(shape input)
@@ -5325,17 +5305,6 @@
 		)
 		(uuid "8e26cb7f-6dea-4f08-9944-08065c4811b7")
 	)
-	(hierarchical_label "CAN2_TX"
-		(shape input)
-		(at 83.82 114.3 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9fd1288f-14f8-4a67-a12b-d3081d065c0c")
-	)
 	(hierarchical_label "SX1262_RESET"
 		(shape input)
 		(at 182.88 105.41 0)
@@ -5347,17 +5316,6 @@
 		)
 		(uuid "a18bd5bf-26ba-44da-8abf-0f59dada40aa")
 	)
-	(hierarchical_label "CAN2_AUX"
-		(shape input)
-		(at 83.82 110.49 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bd823884-8be3-42f2-90ff-bc700af03ea6")
-	)
 	(hierarchical_label "Antenna Switch"
 		(shape input)
 		(at 203.2 67.31 0)
@@ -5368,6 +5326,17 @@
 			(justify left)
 		)
 		(uuid "c0fbf33a-340e-443d-ab0b-0b94487fa38e")
+	)
+	(hierarchical_label "CAN2_AUX"
+		(shape input)
+		(at 179.07 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cd387531-3e3d-4947-b74b-563f5931c1a1")
 	)
 	(hierarchical_label "SX1262_CS"
 		(shape input)
@@ -6183,7 +6152,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61E225KA12-01.pdf"
 			(at 115.57 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -6194,7 +6163,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "2.2 µF ±10% 25V Ceramic Capacitor X5R 0603 (1608 Metric)"
 			(at 115.57 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -6217,6 +6186,39 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 115.57 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM188R61E225KA12D"
+			(at 115.57 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 115.57 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "25V"
 			(at 115.57 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -6633,84 +6635,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 156.21 185.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "27e2accc-1a5a-4aa0-9bea-820e0eccb760")
-		(property "Reference" "#PWR026"
-			(at 156.21 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 156.21 180.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 156.21 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "88c5266c-6043-4bee-a88e-ddf59f95a7df")
-		)
-		(instances
-			(project "rf_rocket_module"
-				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/c4af6750-4012-4fcb-85b8-6e0235f41ddd"
-					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 107.95 36.83 0)
 		(unit 1)
@@ -6754,7 +6678,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/AutoMLCCKAM.pdf"
 			(at 107.95 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -6765,7 +6689,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 107.95 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -6798,6 +6722,39 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 107.95 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "KAM05FR71H104KH"
+			(at 107.95 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 107.95 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "50V"
 			(at 107.95 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -7074,176 +7031,6 @@
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/c4af6750-4012-4fcb-85b8-6e0235f41ddd"
 					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 156.21 189.23 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "315a226a-dcd9-4a45-9a87-9b07b844fac6")
-		(property "Reference" "R13"
-			(at 158.75 187.9599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R"
-			(at 158.75 190.4999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 154.432 189.23 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 156.21 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey PN" ""
-			(at 156.21 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" ""
-			(at 156.21 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 156.21 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Max Temp" ""
-			(at 156.21 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Min Temp" ""
-			(at 156.21 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 156.21 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 156.21 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
-			(at 156.21 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "784a764a-492d-417d-aee9-ee0818a64521")
-		)
-		(pin "2"
-			(uuid "2c558e14-0c10-4419-be25-c12a1af54e29")
-		)
-		(instances
-			(project "rf_rocket_module"
-				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/c4af6750-4012-4fcb-85b8-6e0235f41ddd"
-					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -8009,7 +7796,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61E225KA12-01.pdf"
 			(at 105.41 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -8020,7 +7807,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "2.2 µF ±10% 25V Ceramic Capacitor X5R 0603 (1608 Metric)"
 			(at 105.41 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -8043,6 +7830,39 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 105.41 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM188R61E225KA12D"
+			(at 105.41 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 105.41 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "25V"
 			(at 105.41 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -9259,6 +9079,28 @@
 				)
 			)
 		)
+		(property "MPN" "STM32H562RGT6"
+			(at 148.59 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 148.59 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "144ec784-e1c6-4b95-bc7c-1386ed43c0d8")
 		)
@@ -9685,7 +9527,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 104.14 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -9696,7 +9538,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film"
 			(at 104.14 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -9719,6 +9561,28 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 104.14 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 104.14 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 104.14 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -11033,7 +10897,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 124.46 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -11044,7 +10908,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "33 Ohms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) Moisture Resistant Thick Film"
 			(at 124.46 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -11077,6 +10941,28 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 124.46 29.21 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0733RL"
+			(at 124.46 29.21 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 124.46 29.21 90)
 			(hide yes)
 			(show_name no)

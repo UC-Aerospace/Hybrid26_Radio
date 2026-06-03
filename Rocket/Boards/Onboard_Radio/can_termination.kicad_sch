@@ -2100,8 +2100,16 @@
 		(uuid "3a798785-2744-4b3a-819b-4232fb16bbc4")
 	)
 	(no_connect
+		(at 73.66 110.49)
+		(uuid "3cd74749-0114-4e63-a1b6-65894ae5020f")
+	)
+	(no_connect
 		(at 93.98 110.49)
 		(uuid "722bd262-4670-458c-b322-0e548ca38d75")
+	)
+	(no_connect
+		(at 73.66 107.95)
+		(uuid "8312fe6e-c2b5-42da-99f9-532903a86c66")
 	)
 	(no_connect
 		(at 229.87 130.81)
@@ -2110,6 +2118,10 @@
 	(no_connect
 		(at 229.87 69.85)
 		(uuid "d55110a5-b383-4d1c-9fd4-d8dd26987e49")
+	)
+	(no_connect
+		(at 93.98 113.03)
+		(uuid "e3622da4-78e5-4bba-8ec9-76e8d77d24d8")
 	)
 	(wire
 		(pts
@@ -2203,16 +2215,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 110.49) (xy 73.66 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c1dc2a7-1e77-4ee6-b799-d0e4e6c3d8aa")
-	)
-	(wire
-		(pts
 			(xy 81.28 71.12) (xy 69.85 71.12)
 		)
 		(stroke
@@ -2293,16 +2295,6 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 113.03) (xy 93.98 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "444e29ea-b9f4-40b1-8aba-6bfcebf3d637")
-	)
-	(wire
-		(pts
 			(xy 227.33 69.85) (xy 227.33 118.11)
 		)
 		(stroke
@@ -2350,36 +2342,6 @@
 			(type default)
 		)
 		(uuid "52491c61-f6b7-42dc-8bd7-53f91e0ff393")
-	)
-	(wire
-		(pts
-			(xy 69.85 107.95) (xy 73.66 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54733bc9-ffac-48c2-a414-eff439c4e79b")
-	)
-	(wire
-		(pts
-			(xy 107.95 95.25) (xy 107.95 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57f8c04d-3cb1-4855-82e9-192da5dc3971")
-	)
-	(wire
-		(pts
-			(xy 109.22 113.03) (xy 109.22 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a059119-e99d-4598-aa0c-4d596dc995e2")
 	)
 	(wire
 		(pts
@@ -2643,16 +2605,6 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 113.03) (xy 109.22 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cef4cb93-b90e-4112-ae9e-0285dce29e5e")
-	)
-	(wire
-		(pts
 			(xy 224.79 69.85) (xy 224.79 99.06)
 		)
 		(stroke
@@ -2872,17 +2824,6 @@
 		)
 		(uuid "217e842b-8e4a-4fad-9998-5978ec6117f3")
 	)
-	(hierarchical_label "CAN_STB2"
-		(shape input)
-		(at 109.22 113.03 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "25c07c5b-b6c9-46eb-8f3b-77160b845fcc")
-	)
 	(hierarchical_label "CAN1_TX"
 		(shape input)
 		(at 69.85 97.79 180)
@@ -2905,17 +2846,6 @@
 		)
 		(uuid "7b15efec-4e2e-4852-9ab9-05402269246b")
 	)
-	(hierarchical_label "CAN2_RX"
-		(shape input)
-		(at 69.85 110.49 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8bda57f9-af50-4ead-a372-b46fc92fffa3")
-	)
 	(hierarchical_label "CAN1_RX"
 		(shape input)
 		(at 69.85 100.33 180)
@@ -2926,17 +2856,6 @@
 			(justify right)
 		)
 		(uuid "a3d00a67-46e5-493b-97fd-7830ac4d2847")
-	)
-	(hierarchical_label "CAN2_TX"
-		(shape input)
-		(at 69.85 107.95 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b4c87b6a-84da-45b1-af04-2f4229475b0c")
 	)
 	(hierarchical_label "CAN_PWR_IN"
 		(shape input)
@@ -4288,7 +4207,7 @@
 				)
 			)
 		)
-		(property "Value" "M80-5301042"
+		(property "Value" "M80"
 			(at 218.44 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4320,7 +4239,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Connector Header Through Hole, Right Angle 10 position 0.079\" (2.00mm)"
 			(at 217.17 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -4343,6 +4262,28 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 217.17 64.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "M80-5301042"
+			(at 217.17 64.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Harwin Inc."
 			(at 217.17 64.77 90)
 			(hide yes)
 			(show_name no)
@@ -4624,185 +4565,6 @@
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 101.6 113.03 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7ebe247e-e228-4b8b-b82d-187e9ed00577")
-		(property "Reference" "R2"
-			(at 101.6 116.078 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100K"
-			(at 101.6 118.618 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 101.6 114.808 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
-			(at 101.6 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "100 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
-			(at 101.6 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey PN" ""
-			(at 101.6 113.03 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" ""
-			(at 101.6 113.03 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Stackpole Electronics Inc"
-			(at 101.6 113.03 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Max Temp" "155"
-			(at 101.6 113.03 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Min Temp" "-55"
-			(at 101.6 113.03 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 101.6 113.03 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RMCF0603FT100K"
-			(at 101.6 113.03 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 101.6 113.03 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
-			(at 101.6 113.03 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "87aab9c7-7b37-4275-bf26-15c1ece38751")
-		)
-		(pin "2"
-			(uuid "15f009af-d2c8-404d-950f-8d8131effa4e")
-		)
-		(instances
-			(project "rf_rocket_module"
-				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
-					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -5202,7 +4964,7 @@
 				)
 			)
 		)
-		(property "Value" "M80-5301042"
+		(property "Value" "M80"
 			(at 218.44 142.24 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5234,7 +4996,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Connector Header Through Hole, Right Angle 10 position 0.079\" (2.00mm)"
 			(at 217.17 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -5257,6 +5019,28 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 217.17 135.89 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "M80-5301042"
+			(at 217.17 135.89 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Harwin Inc."
 			(at 217.17 135.89 90)
 			(hide yes)
 			(show_name no)
@@ -5380,85 +5164,6 @@
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 107.95 92.71 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a11ad245-6990-4939-bfee-1326b2c01af5")
-		(property "Reference" "#PWR08"
-			(at 107.95 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 107.95 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 107.95 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "099c95ee-60b2-4403-8f8f-c9ef23dcc547")
-		)
-		(instances
-			(project "rf_rocket_module"
-				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
-					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -5991,85 +5696,6 @@
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
 					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 109.22 110.49 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d6adae33-f8bd-4cad-a5e6-d0248afb2fbe")
-		(property "Reference" "#PWR06"
-			(at 109.22 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 109.22 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 109.22 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2e41ccc6-e8c1-4098-86ba-6b2dc00509f5")
-		)
-		(instances
-			(project "rf_rocket_module"
-				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
-					(reference "#PWR06")
 					(unit 1)
 				)
 			)

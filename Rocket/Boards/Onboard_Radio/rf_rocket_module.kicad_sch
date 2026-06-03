@@ -977,6 +977,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 105.41) (xy 77.47 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0aed4b8c-6da9-43a0-91b9-b122ed0b6882")
+	)
+	(wire
+		(pts
 			(xy 52.07 27.94) (xy 54.61 27.94)
 		)
 		(stroke
@@ -994,16 +1004,6 @@
 			(type default)
 		)
 		(uuid "11a6429f-8b0c-4af3-aeb1-9e6976ebc765")
-	)
-	(wire
-		(pts
-			(xy 53.34 87.63) (xy 77.47 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1dd47cd2-b841-44cc-abde-a710b61de8b1")
 	)
 	(wire
 		(pts
@@ -1157,16 +1157,6 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 97.79) (xy 77.47 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "90ffa683-d343-44be-86c0-af1ac1193a3c")
-	)
-	(wire
-		(pts
 			(xy 43.18 166.37) (xy 49.53 166.37)
 		)
 		(stroke
@@ -1204,16 +1194,6 @@
 			(type default)
 		)
 		(uuid "a79b5e63-2c22-4f05-8263-17a5921ece13")
-	)
-	(wire
-		(pts
-			(xy 53.34 90.17) (xy 77.47 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7b9788e-90c8-4d0f-93ad-5323a8ef83e2")
 	)
 	(wire
 		(pts
@@ -1294,16 +1274,6 @@
 			(type default)
 		)
 		(uuid "d6a6454c-feb1-41c4-8f7a-9f9086423154")
-	)
-	(wire
-		(pts
-			(xy 53.34 105.41) (xy 77.47 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1f0e254-78b0-4655-bdb9-cb89ac5bd5a0")
 	)
 	(wire
 		(pts
@@ -1613,7 +1583,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 58.42 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -1624,7 +1594,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "0 Ohms Jumper 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 58.42 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -1647,6 +1617,28 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 58.42 33.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW06030000Z0EA"
+			(at 58.42 33.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay Dale"
 			(at 58.42 33.02 90)
 			(hide yes)
 			(show_name no)
@@ -2212,7 +2204,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 58.42 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -2223,7 +2215,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "0 Ohms Jumper 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 58.42 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -2246,6 +2238,28 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 58.42 27.94 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW06030000Z0EA"
+			(at 58.42 27.94 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay Dale"
 			(at 58.42 27.94 90)
 			(hide yes)
 			(show_name no)
@@ -2477,7 +2491,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 58.42 22.86 0)
 			(hide yes)
 			(show_name no)
@@ -2488,7 +2502,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "0 Ohms Jumper 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 58.42 22.86 0)
 			(hide yes)
 			(show_name no)
@@ -2511,6 +2525,28 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 58.42 22.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW06030000Z0EA"
+			(at 58.42 22.86 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay Dale"
 			(at 58.42 22.86 90)
 			(hide yes)
 			(show_name no)
@@ -3778,16 +3814,6 @@
 				(justify left)
 			)
 		)
-		(pin "CAN2_AUX" input
-			(at 77.47 105.41 180)
-			(uuid "644861b0-1287-4eca-9635-461ebc9caeeb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "CAN1_RX" input
 			(at 77.47 80.01 180)
 			(uuid "8f1559ab-a0a7-4c3d-b901-d46c186b7edc")
@@ -3808,26 +3834,6 @@
 				(justify left)
 			)
 		)
-		(pin "CAN2_RX" input
-			(at 77.47 87.63 180)
-			(uuid "33dd36f8-07e7-4dfb-a4b0-eaffd08ba366")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "CAN2_TX" input
-			(at 77.47 90.17 180)
-			(uuid "4dba44e1-9055-46f5-89b9-ffa7bd8b2eca")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "CAN_STB1" input
 			(at 77.47 95.25 180)
 			(uuid "a72f5077-0c5f-4002-94ac-72b63bd6eb9a")
@@ -3838,9 +3844,9 @@
 				(justify left)
 			)
 		)
-		(pin "CAN_STB2" input
-			(at 77.47 97.79 180)
-			(uuid "04c600d8-35c8-4929-9535-81db719ae229")
+		(pin "CAN2_AUX" input
+			(at 77.47 105.41 180)
+			(uuid "bfd76015-ae7c-4808-abf6-aebe119b2a3b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3924,39 +3930,9 @@
 				(justify right)
 			)
 		)
-		(pin "CAN2_AUX" input
-			(at 53.34 105.41 0)
-			(uuid "ee740831-be98-4550-bbc8-21deee520ac3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "CAN_PWR_IN" input
 			(at 53.34 74.93 0)
 			(uuid "b3d65371-9ab8-4a86-a5ab-f8921a29adaa")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "CAN2_RX" input
-			(at 53.34 90.17 0)
-			(uuid "92267365-b26a-4790-b62e-ede43f44d7d9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "CAN2_TX" input
-			(at 53.34 87.63 0)
-			(uuid "49c2ddce-dbb5-46be-b218-9027398fa121")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3974,9 +3950,9 @@
 				(justify right)
 			)
 		)
-		(pin "CAN_STB2" input
-			(at 53.34 97.79 0)
-			(uuid "7cee0d2e-8a46-496d-99f0-7fbf58710af4")
+		(pin "CAN2_AUX" input
+			(at 53.34 105.41 0)
+			(uuid "9eafa87a-89cc-4b1a-8d78-b7a92d1932e8")
 			(effects
 				(font
 					(size 1.27 1.27)

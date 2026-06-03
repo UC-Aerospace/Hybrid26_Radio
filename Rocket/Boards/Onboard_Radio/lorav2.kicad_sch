@@ -3296,8 +3296,8 @@
 		(dnp no)
 		(polyline
 			(pts
-				(xy 15.24 21.59) (xy 270.51 21.59) (xy 283.21 34.29) (xy 283.21 135.89) (xy 270.51 148.59) (xy 25.4 148.59)
-				(xy 20.32 143.51) (xy 20.32 26.67)
+				(xy 16.51 21.59) (xy 262.89 21.59) (xy 275.59 34.29) (xy 275.59 135.89) (xy 262.89 148.59) (xy 17.78 148.59)
+				(xy 12.7 143.51) (xy 12.7 26.67)
 			)
 			(stroke
 				(width 0)
@@ -4260,7 +4260,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C473KA01-01.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GJM1555C1H470JB01-01.pdf"
 			(at 100.33 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -4271,7 +4271,7 @@
 				)
 			)
 		)
-		(property "Description" "0.047 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)"
+		(property "Description" "47 pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)"
 			(at 100.33 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -4282,7 +4282,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM155R71C473KA01D "
+		(property "MPN" "GJM1555C1H470JB01D "
 			(at 100.33 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -4326,7 +4326,7 @@
 				)
 			)
 		)
-		(property "Voltage" "16V"
+		(property "Voltage" "50V"
 			(at 100.33 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -6302,10 +6302,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "9d50bc84-88a4-4b8a-b37f-8b31598172ab")
 		(property "Reference" "C3"
 			(at 120.142 94.488 0)
@@ -8682,10 +8682,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e0253b5a-851f-45e1-abbf-a24bbe4bd147")
 		(property "Reference" "C13"
 			(at 122.682 114.808 0)
