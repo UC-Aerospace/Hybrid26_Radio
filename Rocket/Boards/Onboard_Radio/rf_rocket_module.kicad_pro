@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.35,
-          "width": 1.35
+          "drill": 0.0,
+          "height": 0.825,
+          "width": 0.25
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -76,16 +76,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "starved_thermal|160747500|100860000|dee56d4b-ac32-44c5-93d0-df293b36e1fa|b93cd821-213e-470a-9f33-c1320bc66d0a|F.Cu",
-          "joella"
-        ],
-        [
-          "starved_thermal|160747500|101360000|dee56d4b-ac32-44c5-93d0-df293b36e1fa|b5ca5c12-88cf-4999-87da-d054d03409d6|F.Cu",
-          "joella"
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -549,7 +540,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.172,
+        "track_width": 0.5,
         "tuning_profile": ""
       }
     ],
@@ -557,7 +548,98 @@
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/LoRav2/ANT_SW": [
+        "RF_50Ohm"
+      ],
+      "/LoRav2/BUSY": [
+        "RF_50Ohm"
+      ],
+      "/LoRav2/DIO1": [
+        "RF_50Ohm"
+      ],
+      "/LoRav2/DIO2": [
+        "RF_50Ohm"
+      ],
+      "/LoRav2/DIO3": [
+        "RF_50Ohm"
+      ],
+      "/LoRav2/MISO": [
+        "RF_50Ohm"
+      ],
+      "/LoRav2/MOSI": [
+        "RF_50Ohm"
+      ],
+      "/LoRav2/NSS": [
+        "RF_50Ohm"
+      ],
+      "/LoRav2/SCK": [
+        "RF_50Ohm"
+      ],
+      "/LoRav2/SX_NRESET": [
+        "RF_50Ohm"
+      ],
+      "/LoRav2/XTA": [
+        "RF_50Ohm"
+      ],
+      "/LoRav2/XTB": [
+        "RF_50Ohm"
+      ],
+      "GND": [
+        "RF_50Ohm"
+      ],
+      "Net-(C3-Pad1)": [
+        "RF_50Ohm"
+      ],
+      "Net-(C4-Pad2)": [
+        "RF_50Ohm"
+      ],
+      "Net-(C6-Pad2)": [
+        "RF_50Ohm"
+      ],
+      "Net-(C8-Pad2)": [
+        "RF_50Ohm"
+      ],
+      "Net-(J6-In)": [
+        "RF_50Ohm"
+      ],
+      "Net-(U2-DCC_SW)": [
+        "RF_50Ohm"
+      ],
+      "Net-(U2-RFI_N)": [
+        "RF_50Ohm"
+      ],
+      "Net-(U2-RFI_P)": [
+        "RF_50Ohm"
+      ],
+      "Net-(U2-RFO)": [
+        "RF_50Ohm"
+      ],
+      "Net-(U2-VREG)": [
+        "RF_50Ohm"
+      ],
+      "Net-(U2-VR_PA)": [
+        "RF_50Ohm"
+      ],
+      "Net-(U3-CTRL)": [
+        "RF_50Ohm"
+      ],
+      "Net-(U3-RFC)": [
+        "RF_50Ohm"
+      ],
+      "Net-(U3-RF_1)": [
+        "RF_50Ohm"
+      ],
+      "Net-(U3-RF_2)": [
+        "RF_50Ohm"
+      ],
+      "Net-(U3-VDD)": [
+        "RF_50Ohm"
+      ],
+      "VDD_RADIO": [
+        "RF_50Ohm"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {

@@ -3831,7 +3831,7 @@
 	)
 	(text "check these are gpio"
 		(exclude_from_sim no)
-		(at 212.598 135.89 0)
+		(at 215.646 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3883,6 +3883,12 @@
 		(uuid "7296dae2-7120-4af6-bf70-4cf5c3b2cfc7")
 	)
 	(junction
+		(at 104.14 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7fc4fe4a-d188-46c2-8e40-a3a4b7fa8b83")
+	)
+	(junction
 		(at 135.89 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3907,7 +3913,7 @@
 		(uuid "a4a5e1bd-c5cb-415e-a3f1-9be59f541a89")
 	)
 	(junction
-		(at 92.71 33.02)
+		(at 92.71 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a6579ea5-67c2-4c3d-b50b-198b814c7fa1")
@@ -3953,12 +3959,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db8a7c06-7b6d-4423-b8e7-be7c7e00bfda")
-	)
-	(junction
-		(at 104.14 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e1a2d42c-e414-4c8f-8ab7-c9e2491fefa4")
 	)
 	(junction
 		(at 109.22 68.58)
@@ -4027,10 +4027,6 @@
 		(uuid "39955eb6-217c-4372-bf76-3f78591b45b1")
 	)
 	(no_connect
-		(at 173.99 62.23)
-		(uuid "4107c523-a182-4fde-94be-ac6e9e91370a")
-	)
-	(no_connect
 		(at 173.99 130.81)
 		(uuid "4f3d6864-c4ac-4b7f-bd54-49af02752e3e")
 	)
@@ -4095,6 +4091,10 @@
 		(uuid "bafe73dc-71c5-4941-8a45-73c3827c44da")
 	)
 	(no_connect
+		(at 173.99 138.43)
+		(uuid "bb58d07f-eb9f-413d-b69f-56bf7257cc33")
+	)
+	(no_connect
 		(at 173.99 115.57)
 		(uuid "c30536f2-c4cf-40d8-bf75-9f1264451e35")
 	)
@@ -4105,6 +4105,10 @@
 	(no_connect
 		(at 88.9 185.42)
 		(uuid "f041a16c-f107-4ee3-aeb6-36d1461f654e")
+	)
+	(no_connect
+		(at 173.99 135.89)
+		(uuid "f0fb6c2a-ebc9-4210-9cf4-6bd6d5eb56f8")
 	)
 	(no_connect
 		(at 123.19 97.79)
@@ -4392,7 +4396,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 33.02) (xy 92.71 33.02)
+			(xy 91.44 34.29) (xy 92.71 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4499,16 +4503,6 @@
 			(type default)
 		)
 		(uuid "65fe4f6b-4818-471f-ae8b-28c714f1dd92")
-	)
-	(wire
-		(pts
-			(xy 173.99 135.89) (xy 184.15 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "669e2bcc-b0e9-4f9c-8d96-1991bb8a09e6")
 	)
 	(wire
 		(pts
@@ -4672,6 +4666,26 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 34.29) (xy 92.71 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "834cfa3e-5592-4dbe-a3e5-598dee474239")
+	)
+	(wire
+		(pts
+			(xy 104.14 34.29) (xy 104.14 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85cc65c1-9d26-4c70-a720-a49c6d32ace8")
+	)
+	(wire
+		(pts
 			(xy 99.06 177.8) (xy 107.95 177.8)
 		)
 		(stroke
@@ -4739,6 +4753,16 @@
 			(type default)
 		)
 		(uuid "a12f927a-425d-42fd-8c91-6ff623d15719")
+	)
+	(wire
+		(pts
+			(xy 91.44 34.29) (xy 91.44 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a78f87a7-dd8a-4893-a0f1-5b1918c60ce7")
 	)
 	(wire
 		(pts
@@ -4862,7 +4886,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 33.02) (xy 104.14 33.02)
+			(xy 92.71 34.29) (xy 104.14 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4889,6 +4913,16 @@
 			(type default)
 		)
 		(uuid "c9cd54ed-edfe-4378-b5e6-7820be1ed8dd")
+	)
+	(wire
+		(pts
+			(xy 173.99 62.23) (xy 203.2 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4294de7-926b-43d4-8013-9c7665f26b30")
 	)
 	(wire
 		(pts
@@ -5100,16 +5134,6 @@
 		)
 		(uuid "614912f2-0434-4607-b32b-1e6eb740b27d")
 	)
-	(label "LED2"
-		(at 203.2 67.31 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8736cb55-3158-4c33-a4d1-b1a256e46c9f")
-	)
 	(label "SWCLK"
 		(at 135.89 182.88 0)
 		(effects
@@ -5130,7 +5154,7 @@
 		)
 		(uuid "ba296769-4ac6-4805-b9a3-b1b462543586")
 	)
-	(label "LED1"
+	(label "LED2"
 		(at 203.2 64.77 180)
 		(effects
 			(font
@@ -5149,6 +5173,16 @@
 			(justify right bottom)
 		)
 		(uuid "c8b89a92-f8b4-4942-b906-495c8dd0c7e9")
+	)
+	(label "LED1"
+		(at 203.2 62.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c9ac33fc-a798-4de3-a455-e64e17e6e45c")
 	)
 	(label "NRST"
 		(at 146.05 193.04 0)
@@ -5224,17 +5258,6 @@
 			(justify right)
 		)
 		(uuid "4cf23ebe-3906-4dd1-965a-d4ffd3dacd04")
-	)
-	(hierarchical_label "Antenna Switch"
-		(shape input)
-		(at 184.15 135.89 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "62bd8a3c-42d2-4162-af5d-79fa41037a67")
 	)
 	(hierarchical_label "CAN_STB2"
 		(shape input)
@@ -5334,6 +5357,17 @@
 			(justify right)
 		)
 		(uuid "bd823884-8be3-42f2-90ff-bc700af03ea6")
+	)
+	(hierarchical_label "Antenna Switch"
+		(shape input)
+		(at 203.2 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c0fbf33a-340e-443d-ab0b-0b94487fa38e")
 	)
 	(hierarchical_label "SX1262_CS"
 		(shape input)
@@ -10518,7 +10552,7 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ac546fc4-b738-4989-bb81-90783f96dad3")

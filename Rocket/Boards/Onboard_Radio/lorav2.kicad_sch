@@ -3289,6 +3289,61 @@
 		)
 		(uuid "fd461f01-3cb4-452a-8101-025e02902b76")
 	)
+	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(polyline
+			(pts
+				(xy 15.24 21.59) (xy 270.51 21.59) (xy 283.21 34.29) (xy 283.21 135.89) (xy 270.51 148.59) (xy 25.4 148.59)
+				(xy 20.32 143.51) (xy 20.32 26.67)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid "e210a869-cabf-4961-8c2e-318272c48714")
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 111.76 21.59 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "12a1e322-ca07-489a-9f80-d3d6eb0023c5")
+		(property "Net Class" "RF_50Ohm"
+			(at 112.4585 19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 105.41 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 109.22 73.66 0)
@@ -4351,7 +4406,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm"
 			(at 27.94 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -4406,7 +4461,7 @@
 				)
 			)
 		)
-		(property "MPN" "CS06465-32M"
+		(property "MPN" "ABM8-32.000MHZ-B2-T"
 			(at 27.94 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -4417,7 +4472,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "NDK (NIHON DEMPA KOGYO CO., LTD)"
+		(property "Manufacturer" "Abracon LLC"
 			(at 27.94 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -8271,7 +8326,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:JOHNSON_142-0701-841"
+		(property "Footprint" "Library:SMA-KE-16.5A_EdgeMount"
 			(at 270.51 100.33 0)
 			(hide yes)
 			(show_name no)
