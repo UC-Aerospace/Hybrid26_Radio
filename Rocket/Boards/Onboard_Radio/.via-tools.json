@@ -1,0 +1,33 @@
+{
+  "version": "0.1.0",
+  "config_history": {
+    "140f1291-c4d9-43c0-af17-4082c17ae024": [
+      {
+        "config": {
+          "pattern": "Grid",
+          "spacing": 1.0,
+          "clearance": 0.0,
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "via_settings": null
+        },
+        "group_id": "a79c2561-443a-48bc-9bcf-116edb39837c"
+      },
+      {
+        "config": {
+          "pattern": "Grid",
+          "spacing": 1.0,
+          "clearance": 0.0,
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "via_settings": null
+        },
+        "group_id": "45c4a286-fddf-490f-93fd-642eb03bb431"
+      }
+    ]
+  }
+}
