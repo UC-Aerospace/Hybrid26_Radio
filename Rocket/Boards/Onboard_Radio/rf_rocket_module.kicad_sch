@@ -987,7 +987,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 27.94) (xy 54.61 27.94)
+			(xy 52.07 27.94) (xy 69.85 27.94)
 		)
 		(stroke
 			(width 0)
@@ -1067,7 +1067,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 33.02) (xy 54.61 33.02)
+			(xy 52.07 33.02) (xy 69.85 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1197,7 +1197,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 22.86) (xy 52.07 22.86)
+			(xy 52.07 22.86) (xy 77.47 22.86)
 		)
 		(stroke
 			(width 0)
@@ -1207,23 +1207,13 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 39.37) (xy 52.07 39.37)
+			(xy 52.07 38.1) (xy 54.61 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "acd8f6fb-b6e5-45a8-9efc-80af6f6a4bb1")
-	)
-	(wire
-		(pts
-			(xy 62.23 27.94) (xy 69.85 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af10b61c-3752-4648-8e1d-f79cd8ea6807")
+		(uuid "b523656e-d389-41ac-acb2-b9602e18b812")
 	)
 	(wire
 		(pts
@@ -1234,26 +1224,6 @@
 			(type default)
 		)
 		(uuid "bc79673a-7005-48b3-985b-d50004284c63")
-	)
-	(wire
-		(pts
-			(xy 62.23 33.02) (xy 69.85 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cbbe4a94-c430-491b-9e1c-ae2eb2419d0d")
-	)
-	(wire
-		(pts
-			(xy 62.23 22.86) (xy 77.47 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc2e7d5a-ff96-4229-95ed-edbda4097e80")
 	)
 	(wire
 		(pts
@@ -1307,6 +1277,16 @@
 	)
 	(wire
 		(pts
+			(xy 62.23 38.1) (xy 69.85 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4a51169-2a0a-42d5-8069-8f4f9bb0867d")
+	)
+	(wire
+		(pts
 			(xy 53.34 82.55) (xy 77.47 82.55)
 		)
 		(stroke
@@ -1314,16 +1294,6 @@
 			(type default)
 		)
 		(uuid "f4fb8c56-3669-47b0-8c63-9cd6f51fc38c")
-	)
-	(wire
-		(pts
-			(xy 62.23 39.37) (xy 69.85 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb0f2480-df06-406e-8c2d-84eccfbc8a61")
 	)
 	(wire
 		(pts
@@ -1356,7 +1326,7 @@
 		(uuid "26e79d4c-c526-4805-b354-6a01db560e68")
 	)
 	(label "+7V4"
-		(at 69.85 39.37 180)
+		(at 69.85 38.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1536,129 +1506,6 @@
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35"
 					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 58.42 33.02 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3ba3301b-aeb0-42da-a451-62ea9e68f534")
-		(property "Reference" "R19"
-			(at 58.42 30.988 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 58.42 33.02 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 58.42 31.242 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 58.42 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "0 Ohms Jumper 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
-			(at 58.42 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 58.42 33.02 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
-			(at 58.42 33.02 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CRCW06030000Z0EA"
-			(at 58.42 33.02 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Vishay Dale"
-			(at 58.42 33.02 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "084e92a4-73b7-4436-be1a-c0dda0d070bb")
-		)
-		(pin "1"
-			(uuid "401a672c-3fed-41d2-a60c-3a6bab004c07")
-		)
-		(instances
-			(project "rf_rocket_module"
-				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35"
-					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -2163,129 +2010,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 58.42 27.94 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "62df32ab-7877-4459-84d6-a771e7fa9dbf")
-		(property "Reference" "R18"
-			(at 58.42 25.908 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 58.42 27.94 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 58.42 29.718 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 58.42 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "0 Ohms Jumper 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
-			(at 58.42 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 58.42 27.94 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
-			(at 58.42 27.94 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CRCW06030000Z0EA"
-			(at 58.42 27.94 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Vishay Dale"
-			(at 58.42 27.94 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3b2fa057-f0a9-47a3-b060-9e30ef66bf80")
-		)
-		(pin "2"
-			(uuid "d294f211-971d-4c68-afee-81f60a8bca66")
-		)
-		(instances
-			(project "rf_rocket_module"
-				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35"
-					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 40.64 151.13 90)
 		(unit 1)
@@ -2444,129 +2168,6 @@
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35"
 					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 58.42 22.86 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7d71e10e-04ec-471b-b48e-0e35fdac88e2")
-		(property "Reference" "R17"
-			(at 58.42 20.574 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 58.42 22.86 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 58.42 24.638 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 58.42 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "0 Ohms Jumper 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
-			(at 58.42 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 58.42 22.86 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
-			(at 58.42 22.86 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CRCW06030000Z0EA"
-			(at 58.42 22.86 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Vishay Dale"
-			(at 58.42 22.86 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "90a75358-e170-4623-b896-4b25018c49bc")
-		)
-		(pin "1"
-			(uuid "94048554-fe90-48c7-a834-6d5685ce245c")
-		)
-		(instances
-			(project "rf_rocket_module"
-				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35"
-					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -3305,7 +2906,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 58.42 39.37 90)
+		(at 58.42 38.1 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3315,7 +2916,7 @@
 		(dnp no)
 		(uuid "e6ff61e6-769e-4e64-a23d-3e63d6dd6a97")
 		(property "Reference" "R20"
-			(at 58.42 37.338 90)
+			(at 58.42 36.068 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3325,7 +2926,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 58.42 39.37 90)
+			(at 58.42 38.1 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3335,7 +2936,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 58.42 41.148 90)
+			(at 58.42 39.878 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3346,7 +2947,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 58.42 39.37 0)
+			(at 58.42 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3357,7 +2958,7 @@
 			)
 		)
 		(property "Description" "0 Ohms Jumper 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
-			(at 58.42 39.37 0)
+			(at 58.42 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3368,7 +2969,7 @@
 			)
 		)
 		(property "MPN" "CRCW06030000Z0EA"
-			(at 58.42 39.37 0)
+			(at 58.42 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3379,7 +2980,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay Dale"
-			(at 58.42 39.37 0)
+			(at 58.42 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3390,7 +2991,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 58.42 39.37 90)
+			(at 58.42 38.1 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3401,7 +3002,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 58.42 39.37 90)
+			(at 58.42 38.1 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3592,7 +3193,7 @@
 	)
 	(sheet
 		(at 20.32 20.32)
-		(size 31.75 21.59)
+		(size 31.75 43.18)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3618,7 +3219,7 @@
 			)
 		)
 		(property "Sheetfile" "power_connection.kicad_sch"
-			(at 20.32 42.4946 0)
+			(at 20.32 64.0846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3628,19 +3229,9 @@
 				(justify left top)
 			)
 		)
-		(pin "+3V3" input
-			(at 52.07 22.86 0)
-			(uuid "099c472f-74fd-45f4-b062-5924d6f30d89")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "+3V3A" input
+		(pin "+3V3A_Input" input
 			(at 52.07 27.94 0)
-			(uuid "b99d6d18-190a-48c0-a94a-5bb3e7534bf5")
+			(uuid "b169335c-fb3f-4d65-b495-904710f7d84b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3648,9 +3239,19 @@
 				(justify right)
 			)
 		)
-		(pin "+5V" input
+		(pin "+3V3_Input" input
+			(at 52.07 22.86 0)
+			(uuid "731a51cc-497e-4634-a105-89aa58681ccc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+5V_Input" input
 			(at 52.07 33.02 0)
-			(uuid "972f427f-5476-4e5e-b34c-9500bde2e768")
+			(uuid "b4105032-5fde-451f-9a69-2ddca098a6f1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3658,9 +3259,9 @@
 				(justify right)
 			)
 		)
-		(pin "+7V4" input
-			(at 52.07 39.37 0)
-			(uuid "67b00ab1-64fd-45bd-b17e-d9c0d3aa3b1b")
+		(pin "+7V4_Input" input
+			(at 52.07 38.1 0)
+			(uuid "af4f24e1-3cac-4658-a71b-9edbf7e51725")
 			(effects
 				(font
 					(size 1.27 1.27)

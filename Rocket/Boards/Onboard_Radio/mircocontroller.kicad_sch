@@ -3793,16 +3793,6 @@
 		)
 		(uuid "135377bf-c3fd-435d-ac2f-95ef38e37475")
 	)
-	(text "make these diff pairs in pcb"
-		(exclude_from_sim no)
-		(at 222.758 91.186 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "3be4f818-8e7d-4061-ae3b-ab073a371b4b")
-	)
 	(text "SWD"
 		(exclude_from_sim no)
 		(at 122.174 161.036 0)
@@ -4148,6 +4138,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 90.17) (xy 214.63 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10ef5cea-a3cf-4f59-9004-7e203feca040")
+	)
+	(wire
+		(pts
 			(xy 80.01 33.02) (xy 80.01 35.56)
 		)
 		(stroke
@@ -4155,16 +4155,6 @@
 			(type default)
 		)
 		(uuid "144b4fbb-74ce-4840-a822-a125a2765bdd")
-	)
-	(wire
-		(pts
-			(xy 173.99 92.71) (xy 187.96 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "147cee77-ab99-45d1-aba8-034d381b3c70")
 	)
 	(wire
 		(pts
@@ -4298,7 +4288,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 90.17) (xy 207.01 90.17)
+			(xy 222.25 90.17) (xy 231.14 90.17)
 		)
 		(stroke
 			(width 0)
@@ -4445,6 +4435,16 @@
 			(type default)
 		)
 		(uuid "5ac848ea-17e4-4112-82a9-2c828116feec")
+	)
+	(wire
+		(pts
+			(xy 173.99 90.17) (xy 198.12 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5adedb93-9ec8-40b6-a216-a70d6d47ec55")
 	)
 	(wire
 		(pts
@@ -4638,7 +4638,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 92.71) (xy 207.01 92.71)
+			(xy 222.25 92.71) (xy 231.14 92.71)
 		)
 		(stroke
 			(width 0)
@@ -4775,6 +4775,16 @@
 			(type default)
 		)
 		(uuid "ab9ca75a-fd80-4d9c-99e3-ff340c8efd69")
+	)
+	(wire
+		(pts
+			(xy 201.93 92.71) (xy 214.63 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b207b849-f7e9-47da-8e1c-f1f11a30f2ca")
 	)
 	(wire
 		(pts
@@ -4938,16 +4948,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 90.17) (xy 187.96 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd7c1b75-0bb3-4cf9-8340-eb321ba60046")
-	)
-	(wire
-		(pts
 			(xy 173.99 87.63) (xy 179.07 87.63)
 		)
 		(stroke
@@ -4975,6 +4975,16 @@
 			(type default)
 		)
 		(uuid "e2c7299b-0db0-4db6-bceb-a978c314ebf8")
+	)
+	(wire
+		(pts
+			(xy 173.99 92.71) (xy 198.12 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e811f69b-f6f5-4c1e-96d0-cfce0dbecf4b")
 	)
 	(wire
 		(pts
@@ -5087,7 +5097,7 @@
 		(uuid "3c554016-1f50-4146-b53c-ab0d721788b0")
 	)
 	(label "USB_D+"
-		(at 207.01 92.71 180)
+		(at 231.14 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5095,6 +5105,16 @@
 			(justify right bottom)
 		)
 		(uuid "3c832445-3baa-4814-8fc3-29ec7298a669")
+	)
+	(label "MCU_D-"
+		(at 198.12 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3e66348a-48d9-4d53-8a95-b5b515c5f36f")
 	)
 	(label "NRST"
 		(at 116.84 62.23 0)
@@ -5116,6 +5136,16 @@
 		)
 		(uuid "44b71a95-e043-4263-b8a7-caed21dcaf35")
 	)
+	(label "MCU_D+"
+		(at 198.12 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "490ac4bb-0597-45a2-8523-80413c3e6490")
+	)
 	(label "LED1"
 		(at 41.91 167.64 180)
 		(effects
@@ -5136,6 +5166,16 @@
 		)
 		(uuid "614912f2-0434-4607-b32b-1e6eb740b27d")
 	)
+	(label "MCU_D+"
+		(at 201.93 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a3db99e5-ca1d-4473-a71b-f353b63b74e3")
+	)
 	(label "SWCLK"
 		(at 135.89 182.88 0)
 		(effects
@@ -5147,7 +5187,7 @@
 		(uuid "b7f2531b-2a88-43ec-9db4-c3da305a57a8")
 	)
 	(label "USB_D-"
-		(at 207.01 90.17 180)
+		(at 231.14 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5185,6 +5225,16 @@
 			(justify right bottom)
 		)
 		(uuid "c9ac33fc-a798-4de3-a455-e64e17e6e45c")
+	)
+	(label "MCU_D-"
+		(at 201.93 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "db36f291-c5b7-45b1-94b2-65ceeaa20608")
 	)
 	(label "NRST"
 		(at 146.05 193.04 0)
@@ -7890,7 +7940,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 191.77 92.71 90)
+		(at 218.44 92.71 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7900,7 +7950,7 @@
 		(dnp no)
 		(uuid "4f8ac474-8e96-4fb8-85c2-2aa2cf6a2d72")
 		(property "Reference" "R11"
-			(at 186.944 91.694 90)
+			(at 213.614 91.694 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7910,7 +7960,7 @@
 			)
 		)
 		(property "Value" "27R"
-			(at 191.77 92.71 90)
+			(at 218.44 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7920,7 +7970,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 191.77 94.488 90)
+			(at 218.44 94.488 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7931,7 +7981,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
-			(at 191.77 92.71 0)
+			(at 218.44 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7942,7 +7992,7 @@
 			)
 		)
 		(property "Description" "27 Ohms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) Thick Film"
-			(at 191.77 92.71 0)
+			(at 218.44 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7953,7 +8003,7 @@
 			)
 		)
 		(property "DigiKey PN" ""
-			(at 191.77 92.71 90)
+			(at 218.44 92.71 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7964,7 +8014,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 191.77 92.71 90)
+			(at 218.44 92.71 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7975,7 +8025,7 @@
 			)
 		)
 		(property "Manufacturer" "Stackpole Electronics Inc"
-			(at 191.77 92.71 90)
+			(at 218.44 92.71 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7986,7 +8036,7 @@
 			)
 		)
 		(property "Max Temp" "155"
-			(at 191.77 92.71 90)
+			(at 218.44 92.71 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7997,7 +8047,7 @@
 			)
 		)
 		(property "Min Temp" "-55"
-			(at 191.77 92.71 90)
+			(at 218.44 92.71 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8008,7 +8058,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 191.77 92.71 90)
+			(at 218.44 92.71 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8019,7 +8069,7 @@
 			)
 		)
 		(property "MPN" "RMCF0201FT27R0"
-			(at 191.77 92.71 90)
+			(at 218.44 92.71 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8030,7 +8080,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 191.77 92.71 90)
+			(at 218.44 92.71 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8041,7 +8091,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 191.77 92.71 90)
+			(at 218.44 92.71 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8068,7 +8118,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 191.77 90.17 270)
+		(at 218.44 90.17 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8078,7 +8128,7 @@
 		(dnp no)
 		(uuid "50630ce7-f2ec-4f2d-b5bc-caf880f5bf84")
 		(property "Reference" "R10"
-			(at 187.452 89.154 90)
+			(at 214.122 89.154 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8088,7 +8138,7 @@
 			)
 		)
 		(property "Value" "27R"
-			(at 191.77 90.17 90)
+			(at 218.44 90.17 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8098,7 +8148,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 191.77 88.392 90)
+			(at 218.44 88.392 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8109,7 +8159,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
-			(at 191.77 90.17 0)
+			(at 218.44 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8120,7 +8170,7 @@
 			)
 		)
 		(property "Description" "27 Ohms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) Thick Film"
-			(at 191.77 90.17 0)
+			(at 218.44 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8131,7 +8181,7 @@
 			)
 		)
 		(property "DigiKey PN" ""
-			(at 191.77 90.17 90)
+			(at 218.44 90.17 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8142,7 +8192,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 191.77 90.17 90)
+			(at 218.44 90.17 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8153,7 +8203,7 @@
 			)
 		)
 		(property "Manufacturer" "Stackpole Electronics Inc"
-			(at 191.77 90.17 90)
+			(at 218.44 90.17 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8164,7 +8214,7 @@
 			)
 		)
 		(property "Max Temp" "155"
-			(at 191.77 90.17 90)
+			(at 218.44 90.17 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8175,7 +8225,7 @@
 			)
 		)
 		(property "Min Temp" "-55"
-			(at 191.77 90.17 90)
+			(at 218.44 90.17 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8186,7 +8236,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 191.77 90.17 90)
+			(at 218.44 90.17 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8197,7 +8247,7 @@
 			)
 		)
 		(property "MPN" "RMCF0201FT27R0"
-			(at 191.77 90.17 90)
+			(at 218.44 90.17 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8208,7 +8258,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 191.77 90.17 90)
+			(at 218.44 90.17 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8219,7 +8269,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 191.77 90.17 90)
+			(at 218.44 90.17 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
