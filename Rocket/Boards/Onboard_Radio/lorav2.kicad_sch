@@ -2472,7 +2472,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 115.57) (xy 57.15 115.57)
+			(xy 25.4 115.57) (xy 57.15 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2542,7 +2542,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 110.49) (xy 57.15 110.49)
+			(xy 25.4 110.49) (xy 57.15 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2792,7 +2792,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 113.03) (xy 57.15 113.03)
+			(xy 25.4 113.03) (xy 57.15 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2802,7 +2802,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 107.95) (xy 57.15 107.95)
+			(xy 25.4 107.95) (xy 57.15 107.95)
 		)
 		(stroke
 			(width 0)
@@ -3077,7 +3077,7 @@
 	)
 	(hierarchical_label "MOSI"
 		(shape input)
-		(at 52.07 113.03 180)
+		(at 25.4 113.03 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3088,7 +3088,7 @@
 	)
 	(hierarchical_label "NSS"
 		(shape input)
-		(at 52.07 115.57 180)
+		(at 25.4 115.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3099,7 +3099,7 @@
 	)
 	(hierarchical_label "SCK"
 		(shape input)
-		(at 52.07 107.95 180)
+		(at 25.4 107.95 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3110,7 +3110,7 @@
 	)
 	(hierarchical_label "MISO"
 		(shape input)
-		(at 52.07 110.49 180)
+		(at 25.4 110.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3121,12 +3121,12 @@
 	)
 	(hierarchical_label "BUSY"
 		(shape input)
-		(at 90.17 115.57 0)
+		(at 90.17 115.57 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "fb9252e3-204c-49b1-8fcf-e94900f8ddc0")
 	)
@@ -3148,8 +3148,8 @@
 		(dnp no)
 		(polyline
 			(pts
-				(xy 16.51 21.59) (xy 262.89 21.59) (xy 275.59 34.29) (xy 275.59 135.89) (xy 262.89 148.59) (xy 17.78 148.59)
-				(xy 12.7 143.51) (xy 12.7 26.67)
+				(xy 100.33 38.1) (xy 274.32 38.1) (xy 280.67 43.18) (xy 280.67 125.73) (xy 275.59 130.81) (xy 99.06 130.81)
+				(xy 93.98 126.365) (xy 93.98 43.815)
 			)
 			(stroke
 				(width 0)
@@ -3164,8 +3164,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 111.76 21.59 0)
-		(fields_autoplaced yes)
+		(at 115.57 38.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3174,7 +3173,7 @@
 		)
 		(uuid "12a1e322-ca07-489a-9f80-d3d6eb0023c5")
 		(property "Net Class" "RF_50Ohm"
-			(at 112.4585 19.05 0)
+			(at 116.2685 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3185,7 +3184,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at 105.41 66.04 0)
+			(at 109.22 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

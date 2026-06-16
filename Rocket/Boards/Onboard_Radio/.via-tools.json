@@ -28,6 +28,34 @@
         },
         "group_id": "45c4a286-fddf-490f-93fd-642eb03bb431"
       }
+    ],
+    "eae0e89a-54a6-47ea-a37c-c074e788481e": [
+      {
+        "config": {
+          "pattern": "Grid",
+          "spacing": 3.0,
+          "clearance": 0.0,
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "via_settings": null
+        },
+        "group_id": "702d1270-ff8e-4837-8cea-b19af13a3076"
+      },
+      {
+        "config": {
+          "pattern": "Grid",
+          "spacing": 3.0,
+          "clearance": 0.0,
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "via_settings": null
+        },
+        "group_id": "3dd16cdd-7642-4c7a-aabf-568e707a8bd7"
+      }
     ]
   }
 }
