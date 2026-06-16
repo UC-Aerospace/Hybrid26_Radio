@@ -10,6 +10,243 @@
 		(rev "A")
 	)
 	(lib_symbols
+		(symbol "Conn_02x02_Counter_Clockwise_1"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J11"
+				(at 1.27 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MICROFIT"
+				(at 1.27 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/430/43045/430450412_sd.pdf?inline"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "0430450412"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Type" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_2x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_02x02_Counter_Clockwise_1_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 3.81 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 0.127)
+					(end 2.54 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -2.413)
+					(end 2.54 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_out line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 -2.54 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_02x02_Counter_Clockwise"
 			(pin_names
 				(offset 1.016)
@@ -20,8 +257,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 1.27 2.54 0)
+			(property "Reference" "J5"
+				(at 1.27 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -30,8 +267,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_02x02_Counter_Clockwise"
-				(at 1.27 -5.08 0)
+			(property "Value" "MICROFIT"
+				(at 1.27 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -40,7 +277,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -51,7 +288,7 @@
 					)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/430/43045/430450412_sd.pdf?inline"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -62,11 +299,32 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, double row, 02x02, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "0430450412"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Type" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -130,6 +388,17 @@
 					)
 				)
 				(rectangle
+					(start 2.54 -2.413)
+					(end 3.81 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
 					(start 3.81 0.127)
 					(end 2.54 -0.127)
 					(stroke
@@ -140,18 +409,7 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start 3.81 -2.413)
-					(end 2.54 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
+				(pin power_out line
 					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_1"
@@ -205,7 +463,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_out line
 					(at 7.62 0 180)
 					(length 3.81)
 					(name "Pin_4"
@@ -363,171 +621,6 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:FerriteBead"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "FB"
-				(at -3.81 0.635 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "FerriteBead"
-				(at 3.81 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Ferrite bead"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "L ferrite bead inductor filter"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "FerriteBead_0_1"
-				(polyline
-					(pts
-						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 1.2954)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -1.2192)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "FerriteBead_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.54)
 					(name ""
 						(effects
 							(font
@@ -791,6 +884,158 @@
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MIC5365-3.3YC5_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U7"
+				(at 0 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AS78L05RTR-E1"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+				(at 0 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/657/AS78Lxx_Aug2013_DS.pdf"
+				(at 0 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "150mA Low-dropout Voltage Regulator, Vout 3.3V, Vin up to 5.5V, SC-70-5"
+				(at 0 13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Micrel LDO voltage regulator"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT*353*SC*70*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MIC5365-3.3YC5_1_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "MIC5365-3.3YC5_1_1_1"
+				(pin power_out line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "VIN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1323,12 +1568,6 @@
 		(uuid "e82c6544-b2da-4e27-b177-528bc5094022")
 	)
 	(junction
-		(at 139.7 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0c58c370-2f8d-4abf-9ed0-becfebefb7a1")
-	)
-	(junction
 		(at 109.22 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1363,6 +1602,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ed9ad00a-f4a4-4115-ba08-f89bb311106b")
+	)
+	(junction
+		(at 139.7 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8158895-1ee2-499c-a06c-23321eba59b5")
 	)
 	(no_connect
 		(at 52.07 50.8)
@@ -1400,6 +1645,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 125.73) (xy 115.57 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bff0809-66ae-4a5c-a4b7-39d909727cbe")
+	)
+	(wire
+		(pts
 			(xy 49.53 125.73) (xy 59.69 125.73)
 		)
 		(stroke
@@ -1427,16 +1682,6 @@
 			(type default)
 		)
 		(uuid "1d396fcd-2d79-460f-9981-3d864b2ba1c8")
-	)
-	(wire
-		(pts
-			(xy 104.14 184.15) (xy 115.57 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c2bb312-f575-48fd-bf28-25b5ee54a59d")
 	)
 	(wire
 		(pts
@@ -1500,7 +1745,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 106.68) (xy 148.59 106.68)
+			(xy 139.7 106.68) (xy 162.56 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1557,16 +1802,6 @@
 			(type default)
 		)
 		(uuid "50db00a5-86a2-4139-a0fb-25bb6790984d")
-	)
-	(wire
-		(pts
-			(xy 101.6 125.73) (xy 115.57 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5fee17b5-e644-42ee-b6f2-69946bfe5c6f")
 	)
 	(wire
 		(pts
@@ -1670,7 +1905,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 62.23) (xy 116.84 48.26)
+			(xy 116.84 60.96) (xy 116.84 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1737,26 +1972,6 @@
 			(type default)
 		)
 		(uuid "cd3e35e4-a8f4-4ae4-a9fe-d5ed34d2afe1")
-	)
-	(wire
-		(pts
-			(xy 156.21 106.68) (xy 168.91 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d53ba7ef-b531-4dac-a288-51e26ff4d782")
-	)
-	(wire
-		(pts
-			(xy 115.57 170.18) (xy 115.57 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d797bcc4-e0ca-4f7b-844c-5a060a64fb3c")
 	)
 	(wire
 		(pts
@@ -1840,7 +2055,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 62.23) (xy 116.84 62.23)
+			(xy 114.3 60.96) (xy 116.84 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1867,16 +2082,6 @@
 			(justify left bottom)
 		)
 		(uuid "126511db-7406-408f-a00b-aba1e22a0c97")
-	)
-	(label "3V3A_LDO_EN"
-		(at 101.6 125.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "15e3c32c-6979-47a2-af09-b2c11dddeb28")
 	)
 	(label "+3V3A_LDO"
 		(at 208.28 83.82 0)
@@ -1917,16 +2122,6 @@
 			(justify left bottom)
 		)
 		(uuid "43fde933-b24f-4390-af7a-ae9cd8677c80")
-	)
-	(label "5V_LDO_EN"
-		(at 104.14 184.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "49ef99ed-9bf8-48b7-8fbc-1346798e0c99")
 	)
 	(label "+5V_LDO"
 		(at 208.28 92.71 0)
@@ -2019,7 +2214,7 @@
 		(uuid "c586891e-c961-4624-8ed2-ef8404f22690")
 	)
 	(label "+3V3A_LDO"
-		(at 168.91 106.68 180)
+		(at 162.56 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2027,16 +2222,6 @@
 			(justify right bottom)
 		)
 		(uuid "e224e627-1e1a-4fdc-bf90-a0538c86120c")
-	)
-	(label "3V3_LDO_EN"
-		(at 102.87 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f6e8723b-8820-49aa-ae71-5c07a5b6822f")
 	)
 	(label "+5V_In"
 		(at 59.69 128.27 180)
@@ -2047,6 +2232,17 @@
 			(justify right bottom)
 		)
 		(uuid "f7128c9e-e46f-48ee-a19a-02a05b9bb97d")
+	)
+	(hierarchical_label "3V3A_LDO_EN"
+		(shape input)
+		(at 113.03 125.73 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0d35ba83-9501-4a4e-b3f5-dce35bdab79b")
 	)
 	(hierarchical_label "+5V_Input"
 		(shape input)
@@ -2070,6 +2266,17 @@
 		)
 		(uuid "60e8ce1b-a21d-4453-891d-21466bade185")
 	)
+	(hierarchical_label "3V3_LDO_EN"
+		(shape input)
+		(at 114.3 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "874f92b8-71e8-4107-9f4c-8e12af9dde05")
+	)
 	(hierarchical_label "+7V4_Input"
 		(shape input)
 		(at 248.92 116.84 0)
@@ -2091,17 +2298,6 @@
 			(justify left)
 		)
 		(uuid "bd9a5285-2d3f-40c8-8c92-f5bf0bb8dc7f")
-	)
-	(hierarchical_label "+3V3_Input"
-		(shape input)
-		(at 12.362 0.8096 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e396a125-ee7b-4db3-ad3b-f4341012d1c7")
 	)
 	(symbol
 		(lib_id "Regulator_Linear:MIC5365-3.3YC5")
@@ -2274,6 +2470,7 @@
 		)
 	)
 	(symbol
+		(lib_name "Conn_02x02_Counter_Clockwise_1")
 		(lib_id "Connector_Generic:Conn_02x02_Counter_Clockwise")
 		(at 41.91 125.73 0)
 		(unit 1)
@@ -2495,7 +2692,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm"
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 231.14 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -3393,6 +3590,7 @@
 		)
 	)
 	(symbol
+		(lib_name "MIC5365-3.3YC5_1")
 		(lib_id "Regulator_Linear:MIC5365-3.3YC5")
 		(at 125.73 167.64 0)
 		(unit 1)
@@ -3457,17 +3655,11 @@
 				)
 			)
 		)
-		(pin "4"
-			(uuid "910ba4d2-5094-43f6-9257-f7c1fc167afe")
-		)
 		(pin "2"
 			(uuid "8e0473e5-9659-4b43-abfd-dbabb7f55488")
 		)
-		(pin "5"
-			(uuid "ad48d9df-48ae-4ed1-8cb5-558097465f47")
-		)
 		(pin "3"
-			(uuid "efef2add-41e9-401b-b218-79ece7dfe1fb")
+			(uuid "ad48d9df-48ae-4ed1-8cb5-558097465f47")
 		)
 		(pin "1"
 			(uuid "4bdbd65c-b9c4-4e7d-8900-ae34e2cd48f1")
@@ -3995,7 +4187,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm"
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 231.14 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -4069,86 +4261,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:FerriteBead")
-		(at 152.4 106.68 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c05d2c7a-0cdc-467c-adf6-73879b11316e")
-		(property "Reference" "FB1"
-			(at 152.4508 99.06 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "FerriteBead"
-			(at 152.4508 101.6 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 152.4 104.902 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.4 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Ferrite bead"
-			(at 152.4 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "5941b0e3-1fa8-4976-99f8-344b2cd1956b")
-		)
-		(pin "1"
-			(uuid "af67d8f5-8014-4868-952e-1232a3130b47")
-		)
-		(instances
-			(project "rf_rocket_module"
-				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/abcae1e2-b29e-4289-bda9-47e90da98056"
-					(reference "FB1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
 		(at 97.79 106.68 90)
 		(unit 1)
@@ -4182,7 +4294,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm"
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 97.79 106.68 0)
 			(hide yes)
 			(show_name no)

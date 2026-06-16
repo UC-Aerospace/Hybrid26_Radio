@@ -10,164 +10,6 @@
 		(rev "A")
 	)
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x02"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x02"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x02_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector_Generic:Conn_01x10"
 			(pin_names
 				(offset 1.016)
@@ -1332,12 +1174,190 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:SolderJumper_3_Bridged12"
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 				(hide yes)
 			)
-			(exclude_from_sim yes)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Jumper:SolderJumper_3_Open"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
 			(in_pos_files yes)
@@ -1352,7 +1372,7 @@
 					)
 				)
 			)
-			(property "Value" "SolderJumper_3_Bridged12"
+			(property "Value" "SolderJumper_3_Open"
 				(at 0 2.794 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1374,7 +1394,7 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at 0 0 0)
+				(at 0 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1384,9 +1404,31 @@
 					)
 				)
 			)
-			(property "Description" "3-pole Solder Jumper, pins 1+2 closed/bridged"
-				(at 0 0 0)
+			(property "Description" "Solder Jumper, 3-pole, open"
+				(at 0 -12.7 0)
 				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property private "KLC_S5.1" "This is a generic symbol, it has fp-filter, but no default footprint"
+				(at 0 -17.78 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property private "KLC_S3.3" "Graphical-Symbol: thickness is 6mm, fill is background"
+				(at 0 -20.32 0)
+				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
@@ -1406,7 +1448,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SolderJumper*Bridged12*"
+			(property "ki_fp_filters" "SolderJumper*Open*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1417,7 +1459,7 @@
 					)
 				)
 			)
-			(symbol "SolderJumper_3_Bridged12_0_1"
+			(symbol "SolderJumper_3_Open_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy -2.032 0)
@@ -1435,30 +1477,7 @@
 						(xy -1.016 1.016) (xy -1.016 -1.016)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.016 0.508)
-					(end -0.508 -0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start -1.016 -1.016)
-					(mid -2.0276 0)
-					(end -1.016 1.016)
-					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1470,7 +1489,7 @@
 					(mid -2.0276 0)
 					(end -1.016 1.016)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1481,7 +1500,7 @@
 					(start -0.508 1.016)
 					(end 0.508 -1.016)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1505,19 +1524,7 @@
 					(mid 2.0276 0)
 					(end 1.016 -1.016)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.016 1.016)
-					(mid 2.0276 0)
-					(end 1.016 -1.016)
-					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1529,7 +1536,7 @@
 						(xy 1.016 1.016) (xy 1.016 -1.016)
 					)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1549,7 +1556,7 @@
 					)
 				)
 			)
-			(symbol "SolderJumper_3_Bridged12_1_1"
+			(symbol "SolderJumper_3_Open_1_1"
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -2001,27 +2008,17 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Could look into picolock connectors"
-		(exclude_from_sim no)
-		(at 222.758 15.24 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "88bc7739-b65e-45c9-b393-b0b0c4797d11")
+	(junction
+		(at 81.28 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08b0b5a7-0909-45de-b720-f134ee2ae1ef")
 	)
 	(junction
 		(at 227.33 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1651de21-a111-4aae-a27f-e9295ec9a13e")
-	)
-	(junction
-		(at 161.29 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2be75091-7b1b-41f6-92a0-99bf9d56d790")
 	)
 	(junction
 		(at 214.63 127)
@@ -2042,16 +2039,22 @@
 		(uuid "6334bca5-18e9-4784-872c-422e6077e46f")
 	)
 	(junction
-		(at 163.83 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "68f4938e-e7ea-4d8d-baaa-fde78186cf83")
-	)
-	(junction
 		(at 217.17 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6a38f079-8bfd-4861-932c-cc75e630c333")
+	)
+	(junction
+		(at 163.83 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8a12033e-d68d-41a3-9205-f6c6610f3142")
+	)
+	(junction
+		(at 161.29 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "92d5dd55-eec8-4037-b71e-f1fc7b2089f7")
 	)
 	(junction
 		(at 161.29 100.33)
@@ -2088,12 +2091,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e71a6514-7a8c-4ead-ba41-35a92d349253")
-	)
-	(junction
-		(at 81.28 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ee5aafdb-269f-4a82-b78e-fd81c4be822c")
 	)
 	(no_connect
 		(at 93.98 107.95)
@@ -2195,7 +2192,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 111.76) (xy 166.37 111.76)
+			(xy 163.83 111.76) (xy 176.53 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2265,7 +2262,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 114.3) (xy 163.83 114.3)
+			(xy 163.83 115.57) (xy 182.88 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2305,7 +2302,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 86.36) (xy 161.29 86.36)
+			(xy 161.29 85.09) (xy 182.88 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2345,6 +2342,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 88.9) (xy 175.26 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59ea459e-c04e-494a-8318-19bac13d39f5")
+	)
+	(wire
+		(pts
 			(xy 212.09 113.03) (xy 212.09 130.81)
 		)
 		(stroke
@@ -2375,7 +2382,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 88.9) (xy 161.29 88.9)
+			(xy 161.29 88.9) (xy 175.26 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2435,7 +2442,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 114.3) (xy 163.83 118.11)
+			(xy 163.83 115.57) (xy 163.83 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2512,6 +2519,16 @@
 			(type default)
 		)
 		(uuid "a85168da-58a9-4de5-9b40-82c473ff6d13")
+	)
+	(wire
+		(pts
+			(xy 176.53 105.41) (xy 182.88 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a877fccd-8758-4d7f-87df-1e2ccddaa531")
 	)
 	(wire
 		(pts
@@ -2615,6 +2632,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 111.76) (xy 176.53 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d857c6f5-4ecb-44cd-a0f5-bdc129ab583a")
+	)
+	(wire
+		(pts
 			(xy 140.97 90.17) (xy 133.35 90.17)
 		)
 		(stroke
@@ -2705,6 +2732,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 95.25) (xy 182.88 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee7ae7f4-1351-4355-93e2-f096cea00a93")
+	)
+	(wire
+		(pts
 			(xy 217.17 123.19) (xy 217.17 130.81)
 		)
 		(stroke
@@ -2715,7 +2752,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 86.36) (xy 161.29 82.55)
+			(xy 161.29 85.09) (xy 161.29 82.55)
 		)
 		(stroke
 			(width 0)
@@ -3061,198 +3098,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_3_Bridged12")
-		(at 144.78 90.17 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1726af37-96eb-46da-978e-f88960bc74a6")
-		(property "Reference" "JP1"
-			(at 147.32 88.8999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "CH SEL"
-			(at 147.32 91.4399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm"
-			(at 144.78 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "3-pole Solder Jumper, pins 1+2 closed/bridged"
-			(at 144.78 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 144.78 90.17 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 144.78 90.17 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey PN" ""
-			(at 144.78 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" ""
-			(at 144.78 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 144.78 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Max Temp" ""
-			(at 144.78 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Min Temp" ""
-			(at 144.78 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 144.78 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 144.78 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
-			(at 144.78 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4938fbf8-70eb-4eb5-9816-74cf3687141a")
-		)
-		(pin "3"
-			(uuid "59855388-7ec2-4790-b002-976fe9a27b62")
-		)
-		(pin "2"
-			(uuid "9de1eccb-8736-4de3-8b15-74888f777331")
-		)
-		(instances
-			(project "rf_rocket_module"
-				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
-					(reference "JP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 198.12 130.81 0)
 		(mirror y)
@@ -3326,173 +3171,6 @@
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
 					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 171.45 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1bbe45fe-bcfd-46a7-8c72-375f3715e6b3")
-		(property "Reference" "J7"
-			(at 174.244 86.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CAN1_T"
-			(at 176.784 89.154 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 171.45 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 171.45 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey PN" ""
-			(at 171.45 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" ""
-			(at 171.45 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 171.45 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Max Temp" ""
-			(at 171.45 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Min Temp" ""
-			(at 171.45 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 171.45 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 171.45 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
-			(at 171.45 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "652b62c9-d273-4622-98eb-4810160c003e")
-		)
-		(pin "2"
-			(uuid "8d40eae4-8ed4-4416-b318-7ecc5648bba7")
-		)
-		(instances
-			(project "rf_rocket_module"
-				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
-					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -4217,7 +3895,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Harwin:Harwin_LTek-Male_2x05_P2.00mm_Vertical"
+		(property "Footprint" "Library:HARWIN_M80-5011005"
 			(at 217.17 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -4407,6 +4085,88 @@
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 182.88 110.49 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c196374-f293-4626-90f7-3ac0dfda9ebd")
+		(property "Reference" "JP7"
+			(at 185.42 109.2199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 185.42 111.7599 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 182.88 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 187.96 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "acab200b-ddb5-44a2-9b22-4ad9ab7b5b7b")
+		)
+		(pin "1"
+			(uuid "3f03587d-1ece-486c-8570-9908bc360ec1")
+		)
+		(instances
+			(project "rf_rocket_module"
+				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
+					(reference "JP7")
 					(unit 1)
 				)
 			)
@@ -4751,8 +4511,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_3_Bridged12")
-		(at 144.78 109.22 270)
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 182.88 90.17 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4760,31 +4520,32 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "8b12d4db-eae7-4536-98b0-bd2526cf284b")
-		(property "Reference" "JP2"
-			(at 147.32 107.9499 90)
+		(fields_autoplaced yes)
+		(uuid "85b13f5f-832b-4434-89c7-083d0f4a395e")
+		(property "Reference" "JP5"
+			(at 185.42 88.8999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "CH SEL"
-			(at 147.32 110.4899 90)
+		(property "Value" "SolderJumper_2_Open"
+			(at 185.42 91.4399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm"
-			(at 144.78 109.22 0)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 182.88 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4795,7 +4556,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 109.22 0)
+			(at 190.5 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4805,8 +4566,8 @@
 				)
 			)
 		)
-		(property "Description" "3-pole Solder Jumper, pins 1+2 closed/bridged"
-			(at 144.78 109.22 0)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 187.96 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4815,128 +4576,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Sim.Device" ""
-			(at 144.78 109.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 144.78 109.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey PN" ""
-			(at 144.78 109.22 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" ""
-			(at 144.78 109.22 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 144.78 109.22 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Max Temp" ""
-			(at 144.78 109.22 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Min Temp" ""
-			(at 144.78 109.22 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 144.78 109.22 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 144.78 109.22 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
-			(at 144.78 109.22 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "82c3f08a-27d8-4e63-96a0-d837103b1f06")
-		)
-		(pin "3"
-			(uuid "799a317f-ba30-45fd-966f-8746605c94b8")
 		)
 		(pin "2"
-			(uuid "783eaa41-f90c-42c9-8e07-443446268139")
+			(uuid "a6997e45-d5b8-47c3-aef5-910984168671")
+		)
+		(pin "1"
+			(uuid "9f971ee6-a7a9-4e0f-ae16-09d8fded2e0f")
 		)
 		(instances
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
-					(reference "JP2")
+					(reference "JP5")
 					(unit 1)
 				)
 			)
@@ -4974,7 +4624,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Harwin:Harwin_LTek-Male_2x05_P2.00mm_Vertical"
+		(property "Footprint" "Library:HARWIN_M80-5011005"
 			(at 217.17 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -5164,174 +4814,6 @@
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 171.45 114.3 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "aa651b1b-933a-42a6-a3d8-2aa55bfb625f")
-		(property "Reference" "J8"
-			(at 174.244 112.014 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CAN2_T"
-			(at 176.784 114.554 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 171.45 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 171.45 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey PN" ""
-			(at 171.45 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" ""
-			(at 171.45 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 171.45 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Max Temp" ""
-			(at 171.45 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Min Temp" ""
-			(at 171.45 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 171.45 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 171.45 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
-			(at 171.45 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "95993de0-6b00-4d2c-be65-a2365259c4a0")
-		)
-		(pin "1"
-			(uuid "2cbe1868-2f63-4546-bc9e-370744b6a494")
-		)
-		(instances
-			(project "rf_rocket_module"
-				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
-					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -5696,6 +5178,220 @@
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 144.78 90.17 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca878834-8f2f-4683-b4a2-a1556fdf56d4")
+		(property "Reference" "JP8"
+			(at 147.32 88.8999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CH SEL"
+			(at 147.32 91.4399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 144.78 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 3-pole, open"
+			(at 132.08 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S5.1" "This is a generic symbol, it has fp-filter, but no default footprint"
+			(at 127 90.17 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S3.3" "Graphical-Symbol: thickness is 6mm, fill is background"
+			(at 124.46 90.17 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bb27f2b5-09ae-4b65-9adb-c0b82bf8f7c0")
+		)
+		(pin "2"
+			(uuid "c8b65dc5-8bec-434f-833e-17e50043341f")
+		)
+		(pin "3"
+			(uuid "2863036c-056a-4172-b067-def627991806")
+		)
+		(instances
+			(project "rf_rocket_module"
+				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
+					(reference "JP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 144.78 109.22 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef5e5713-edf7-4be5-a1be-1b4d445763c2")
+		(property "Reference" "JP9"
+			(at 147.32 107.9499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CH SEL"
+			(at 147.32 110.4899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 144.78 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 3-pole, open"
+			(at 132.08 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S5.1" "This is a generic symbol, it has fp-filter, but no default footprint"
+			(at 127 109.22 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S3.3" "Graphical-Symbol: thickness is 6mm, fill is background"
+			(at 124.46 109.22 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ee13dd15-b54a-42d6-8284-4c4066776cd5")
+		)
+		(pin "2"
+			(uuid "316b2955-3a51-439a-b27e-9cc4fb470e3f")
+		)
+		(pin "3"
+			(uuid "6a065575-09c7-4d18-ba6e-3798dd439d46")
+		)
+		(instances
+			(project "rf_rocket_module"
+				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
+					(reference "JP9")
 					(unit 1)
 				)
 			)

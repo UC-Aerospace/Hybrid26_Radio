@@ -1712,145 +1712,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3V3"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+3V3"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+3V3_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3V3_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -2631,16 +2492,6 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 138.43) (xy 27.94 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b262f88-c4fa-474b-8b39-3494bcfc08a5")
-	)
-	(wire
-		(pts
 			(xy 92.71 87.63) (xy 92.71 78.74)
 		)
 		(stroke
@@ -2698,16 +2549,6 @@
 			(type default)
 		)
 		(uuid "7d808742-7489-4b1a-b4a4-3a1a02cf5379")
-	)
-	(wire
-		(pts
-			(xy 26.67 137.16) (xy 26.67 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "801279ec-ef50-41b4-b42c-f7a7c525164d")
 	)
 	(wire
 		(pts
@@ -3212,6 +3053,28 @@
 		)
 		(uuid "2ad67650-e52a-4c5b-b49b-7eb21a7cd64e")
 	)
+	(hierarchical_label "+3V3A"
+		(shape input)
+		(at 69.85 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "40a5076c-4c91-445a-9f35-070fd13d250d")
+	)
+	(hierarchical_label "+3V3A"
+		(shape input)
+		(at 53.34 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8dcdbb6a-bc42-4202-8ce4-25d4f53a9b06")
+	)
 	(hierarchical_label "MOSI"
 		(shape input)
 		(at 52.07 113.03 180)
@@ -3244,17 +3107,6 @@
 			(justify right)
 		)
 		(uuid "c7582296-fdb7-4c86-97e9-a303506a522a")
-	)
-	(hierarchical_label "+3V3A"
-		(shape input)
-		(at 27.94 138.43 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d35c7d2f-baf3-48da-be85-4a22fad4014a")
 	)
 	(hierarchical_label "MISO"
 		(shape input)
@@ -4598,83 +4450,6 @@
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/ec17b761-2334-4457-8873-4c3a71db4204"
 					(reference "#PWR074")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 53.34 59.69 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "25ce8d67-198b-4fd4-9691-c900f4a4fd49")
-		(property "Reference" "#PWR044"
-			(at 53.34 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VDD_RADIO"
-			(at 46.99 57.912 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 53.34 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "91e1d4ac-3720-4b5c-96d5-0dea0a3f056a")
-		)
-		(instances
-			(project "rf_rocket_module"
-				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/ec17b761-2334-4457-8873-4c3a71db4204"
-					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -8060,162 +7835,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 69.85 44.45 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c702bbe6-eab7-41ee-8a21-7351a4533c0d")
-		(property "Reference" "#PWR047"
-			(at 69.85 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VDD_RADIO"
-			(at 69.85 39.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 69.85 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 69.85 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 69.85 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a026377d-6899-4563-b734-8d515f862954")
-		)
-		(instances
-			(project "rf_rocket_module"
-				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/ec17b761-2334-4457-8873-4c3a71db4204"
-					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 26.67 137.16 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ca9152ed-57be-4528-b313-008cb0950b23")
-		(property "Reference" "#PWR048"
-			(at 26.67 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VDD_RADIO"
-			(at 26.67 132.08 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 26.67 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 26.67 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 26.67 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ad942a77-1dec-4f94-b029-7d2e4f49a3e2")
-		)
-		(instances
-			(project "rf_rocket_module"
-				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/ec17b761-2334-4457-8873-4c3a71db4204"
-					(reference "#PWR048")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 129.54 119.38 0)
 		(unit 1)
@@ -9429,7 +9048,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
 			(at 209.804 74.676 0)
 			(hide yes)
 			(show_name no)

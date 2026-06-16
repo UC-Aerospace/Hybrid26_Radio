@@ -997,6 +997,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 46.99) (xy 77.47 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e6786e4-9b82-4bcd-b95c-155a5fa8bbfb")
+	)
+	(wire
+		(pts
 			(xy 64.77 74.93) (xy 53.34 74.93)
 		)
 		(stroke
@@ -1084,6 +1094,16 @@
 			(type default)
 		)
 		(uuid "6b3513f1-beaf-4496-8d96-bebbaf2c84eb")
+	)
+	(wire
+		(pts
+			(xy 52.07 49.53) (xy 77.47 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7597a47d-397f-49ee-9ef0-8faa850594c0")
 	)
 	(wire
 		(pts
@@ -1709,7 +1729,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 40.64 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -2040,7 +2060,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 40.64 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -2204,7 +2224,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 40.64 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -3058,7 +3078,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 40.64 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -3269,6 +3289,26 @@
 				(justify right)
 			)
 		)
+		(pin "3V3A_LDO_EN" input
+			(at 52.07 46.99 0)
+			(uuid "cb30cf9a-a383-4bda-b3e4-f0c2d00cf2d3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "3V3_LDO_EN" input
+			(at 52.07 49.53 0)
+			(uuid "78b33418-15c9-4585-9e38-fef886de051d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35"
@@ -3448,6 +3488,26 @@
 		(pin "CAN2_AUX" input
 			(at 77.47 105.41 180)
 			(uuid "bfd76015-ae7c-4808-abf6-aebe119b2a3b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3V3A_LDO_EN" input
+			(at 77.47 46.99 180)
+			(uuid "0fc545d6-5bf2-46fa-8197-4b8c8122f48e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3V3_LDO_EN" input
+			(at 77.47 49.53 180)
+			(uuid "cf0a13eb-41cb-4401-b438-f8fb4e676381")
 			(effects
 				(font
 					(size 1.27 1.27)

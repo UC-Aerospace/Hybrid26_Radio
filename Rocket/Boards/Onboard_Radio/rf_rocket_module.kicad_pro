@@ -76,7 +76,16 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "copper_edge_clearance|144600000|136250000|515bdb41-3824-41f6-b9ac-e57b0ef4049c|195f6539-3f5b-4c55-8b29-37473e26b1c4",
+          "USB Plug Edge"
+        ],
+        [
+          "copper_edge_clearance|147000000|136250000|515bdb41-3824-41f6-b9ac-e57b0ef4049c|b7986766-63a4-41fa-9655-0a266b44087a",
+          "USB Plug Edge"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -282,7 +291,24 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "power_pin_not_driven|1155700|1066800|2c4963e8-023c-401b-9a0f-dcf58c354188|00000000-0000-0000-0000-000000000000|/4940ffbe-f45f-4917-a247-12e2b32b6c35/abcae1e2-b29e-4289-bda9-47e90da98056|/4940ffbe-f45f-4917-a247-12e2b32b6c35/abcae1e2-b29e-4289-bda9-47e90da98056|",
+        "Joella"
+      ],
+      [
+        "power_pin_not_driven|698500|1524000|9ea7b886-2a6c-4b9e-9f16-30e23bd3e482|00000000-0000-0000-0000-000000000000|/4940ffbe-f45f-4917-a247-12e2b32b6c35|/4940ffbe-f45f-4917-a247-12e2b32b6c35|",
+        "Joella"
+      ],
+      [
+        "power_pin_not_driven|812800|863600|02305385-2371-4d4b-a4a2-ecd5225a5dd3|00000000-0000-0000-0000-000000000000|/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40|/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40|",
+        "Joella"
+      ],
+      [
+        "power_pin_not_driven|863600|863600|0b91cf8e-b34b-49f0-9a01-3e01e275be79|00000000-0000-0000-0000-000000000000|/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40|/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40|",
+        "Joella"
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -549,6 +575,9 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "/+3V3A": [
+        "RF_50Ohm"
+      ],
       "/LoRav2/ANT_SW": [
         "RF_50Ohm"
       ],
@@ -866,7 +895,7 @@
         "uuid": "4940ffbe-f45f-4917-a247-12e2b32b6c35"
       }
     ],
-    "used_designators": "U5-7,C35-40,#PWR1,#PWR6,#PWR8-9,#PWR26,#PWR39-40,#PWR42-43,#PWR49-50,J1,J5,J11,JP3-6,FB1",
+    "used_designators": "#PWR52,JP5,JP7-9",
     "variants": []
   },
   "sheets": [
