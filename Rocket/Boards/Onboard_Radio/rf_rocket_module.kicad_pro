@@ -78,10 +78,6 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|161875000|104650000|bb9e605c-dea2-4ff0-8f5c-6143a87296a8|df6e7f1d-8457-497e-850b-7b924da8ef97",
-          "joella"
-        ],
-        [
           "copper_edge_clearance|144600000|136250000|515bdb41-3824-41f6-b9ac-e57b0ef4049c|195f6539-3f5b-4c55-8b29-37473e26b1c4",
           "USB Plug Edge"
         ],
@@ -902,7 +898,7 @@
         "uuid": "4940ffbe-f45f-4917-a247-12e2b32b6c35"
       }
     ],
-    "used_designators": "#PWR52,JP5,JP7-9",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
