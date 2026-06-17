@@ -33,6 +33,32 @@
       {
         "config": {
           "pattern": "Grid",
+          "spacing": 7.000000000000011,
+          "clearance": 1.0,
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "via_settings": null
+        },
+        "group_id": "d37eaa9a-f4d6-4ef1-98e1-eb479f3104f4"
+      },
+      {
+        "config": {
+          "pattern": "Grid",
+          "spacing": 10.0,
+          "clearance": 1.0,
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "via_settings": null
+        },
+        "group_id": "a505a88b-5655-4b00-a1da-4af3c886dd96"
+      },
+      {
+        "config": {
+          "pattern": "Grid",
           "spacing": 3.0,
           "clearance": 0.0,
           "offset": [

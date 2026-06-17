@@ -3032,6 +3032,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C844915"
+			(at 58.42 38.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "600623ad-b609-4b8e-937c-a9cdd9a6309c")
 		)
