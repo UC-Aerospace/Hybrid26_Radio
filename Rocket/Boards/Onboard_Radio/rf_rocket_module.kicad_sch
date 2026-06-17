@@ -977,7 +977,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 105.41) (xy 77.47 105.41)
+			(xy 52.07 105.41) (xy 77.47 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1007,7 +1007,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 74.93) (xy 53.34 74.93)
+			(xy 64.77 74.93) (xy 52.07 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1037,7 +1037,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 95.25) (xy 77.47 95.25)
+			(xy 52.07 95.25) (xy 77.47 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1047,7 +1047,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 80.01) (xy 77.47 80.01)
+			(xy 52.07 80.01) (xy 77.47 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1187,7 +1187,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 102.87) (xy 77.47 102.87)
+			(xy 52.07 102.87) (xy 77.47 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1307,7 +1307,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 82.55) (xy 77.47 82.55)
+			(xy 52.07 82.55) (xy 77.47 82.55)
 		)
 		(stroke
 			(width 0)
@@ -3535,7 +3535,7 @@
 		)
 	)
 	(sheet
-		(at 21.59 71.12)
+		(at 20.32 71.12)
 		(size 31.75 36.83)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3551,7 +3551,7 @@
 		)
 		(uuid "cd7404e7-7bb1-47cb-8f3f-f69e3160ee40")
 		(property "Sheetname" "CAN_Termination"
-			(at 21.59 70.4084 0)
+			(at 20.32 70.4084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3562,7 +3562,7 @@
 			)
 		)
 		(property "Sheetfile" "can_termination.kicad_sch"
-			(at 21.59 108.5346 0)
+			(at 20.32 108.5346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3573,7 +3573,7 @@
 			)
 		)
 		(pin "CAN1_RX" input
-			(at 53.34 82.55 0)
+			(at 52.07 82.55 0)
 			(uuid "191089a2-551d-4e79-8e74-91933d28fb5a")
 			(effects
 				(font
@@ -3583,7 +3583,7 @@
 			)
 		)
 		(pin "CAN1_TX" input
-			(at 53.34 80.01 0)
+			(at 52.07 80.01 0)
 			(uuid "da7f34b0-2fe3-469e-9d42-c10342174414")
 			(effects
 				(font
@@ -3593,7 +3593,7 @@
 			)
 		)
 		(pin "CAN1_AUX" input
-			(at 53.34 102.87 0)
+			(at 52.07 102.87 0)
 			(uuid "0161c3ed-7f08-452d-9bfb-fc780c1578c7")
 			(effects
 				(font
@@ -3603,7 +3603,7 @@
 			)
 		)
 		(pin "CAN_PWR_IN" input
-			(at 53.34 74.93 0)
+			(at 52.07 74.93 0)
 			(uuid "b3d65371-9ab8-4a86-a5ab-f8921a29adaa")
 			(effects
 				(font
@@ -3613,7 +3613,7 @@
 			)
 		)
 		(pin "CAN_STB1" input
-			(at 53.34 95.25 0)
+			(at 52.07 95.25 0)
 			(uuid "e0c8344c-187f-46cc-b691-8c267a25ccc5")
 			(effects
 				(font
@@ -3623,7 +3623,7 @@
 			)
 		)
 		(pin "CAN2_AUX" input
-			(at 53.34 105.41 0)
+			(at 52.07 105.41 0)
 			(uuid "9eafa87a-89cc-4b1a-8d78-b7a92d1932e8")
 			(effects
 				(font
