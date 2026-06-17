@@ -984,7 +984,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:SMA-KE-16.5A_EdgeMount"
+		(property "Footprint" "Library:SMA-KE-16.5A_EdgeMount (1)"
 			(at 184.15 74.93 0)
 			(hide yes)
 			(show_name no)

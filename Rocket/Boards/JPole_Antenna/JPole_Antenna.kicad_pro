@@ -60,7 +60,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.0,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
@@ -76,7 +76,52 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|36946550|69279999|46807ab9-d0a2-4aea-9ff6-b10f9d9d3b68|bf232b6e-6aac-4299-a11d-a456d3651cbe",
+          "joella"
+        ],
+        [
+          "clearance|38498300|69279999|46807ab9-d0a2-4aea-9ff6-b10f9d9d3b68|7319bf14-e7d9-4563-96a5-a3c7b4bb762b",
+          "joella"
+        ],
+        [
+          "clearance|38500000|71600000|184340b5-3155-4480-a600-705f74b17dc7|84bc6e0e-98bb-436f-bbdf-897eb008d368",
+          "joella"
+        ],
+        [
+          "copper_edge_clearance|31250000|66100000|16ae569a-c59d-4081-aac0-71f5d01927aa|671f5567-ef3e-430c-8a61-a6b643e5122e",
+          "joella"
+        ],
+        [
+          "copper_edge_clearance|31250000|66100000|16ae569a-c59d-4081-aac0-71f5d01927aa|eb4e685d-ef28-427a-b743-f49f068cbafb",
+          "joella"
+        ],
+        [
+          "copper_edge_clearance|31250000|66100000|16ae569a-c59d-4081-aac0-71f5d01927aa|edc37579-e201-4d0b-832e-17c6903416d8",
+          "joella"
+        ],
+        [
+          "copper_edge_clearance|31250000|69950000|16ae569a-c59d-4081-aac0-71f5d01927aa|4d464261-4939-4d39-8ff1-a1ae7f98c934",
+          "joella"
+        ],
+        [
+          "copper_edge_clearance|31250000|72300000|16ae569a-c59d-4081-aac0-71f5d01927aa|3fb1958b-0a22-435d-a6fa-49bc4e6e8bde",
+          "joella"
+        ],
+        [
+          "copper_edge_clearance|31250000|72300000|16ae569a-c59d-4081-aac0-71f5d01927aa|8dcc9273-fff7-45f7-9bd7-40e1e0b698a7",
+          "joella"
+        ],
+        [
+          "track_dangling|117900000|74100000|2e75208f-475d-4358-b839-08fb74ad8b06|00000000-0000-0000-0000-000000000000",
+          "joella"
+        ],
+        [
+          "track_dangling|273600000|66800000|b39c56d6-68b0-42ee-86ee-cd4f204819f1|00000000-0000-0000-0000-000000000000",
+          "joella"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -211,6 +256,7 @@
       ],
       "track_widths": [
         0.0,
+        0.1,
         0.5034
       ],
       "tuning_pattern_settings": {
@@ -527,12 +573,12 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.5,
+        "clearance": 0.9,
         "name": "50_Ohm_RF",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgb(255, 85, 245)",
-        "track_width": 0.5034,
+        "track_width": 0.3035,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3
@@ -686,7 +732,7 @@
         "uuid": "8ab7282e-027b-4c63-a6ef-5cc9f9e66185"
       }
     ],
-    "used_designators": "J1-2,#PWR1-6,U1,FL1",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
