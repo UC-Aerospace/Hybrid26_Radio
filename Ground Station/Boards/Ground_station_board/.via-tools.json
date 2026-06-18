@@ -1,0 +1,59 @@
+{
+  "version": "0.1.0",
+  "config_history": {
+    "0235f7bf-dbf1-4b9f-b2c1-ed2a3aa6563e": [
+      {
+        "config": {
+          "pattern": "Stagger Rows",
+          "spacing": 10.0,
+          "clearance": 0.0,
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "via_settings": null
+        },
+        "group_id": "8085ec00-9457-4b71-9854-ee4fe0fd72cb"
+      },
+      {
+        "config": {
+          "pattern": "Stagger Rows",
+          "spacing": 10.0,
+          "clearance": 0.0,
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "via_settings": null
+        },
+        "group_id": "f49e0959-f85e-4c30-8b9b-b8648813aabd"
+      },
+      {
+        "config": {
+          "pattern": "Grid",
+          "spacing": 10.0,
+          "clearance": 0.0,
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "via_settings": null
+        },
+        "group_id": "e2a03033-ea6b-42ca-b17a-fb9ca8b9f7c0"
+      },
+      {
+        "config": {
+          "pattern": "Grid",
+          "spacing": 10.0,
+          "clearance": 0.0,
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "via_settings": null
+        },
+        "group_id": "86c23efb-4b4f-4150-8668-579ee7f3f5db"
+      }
+    ]
+  }
+}

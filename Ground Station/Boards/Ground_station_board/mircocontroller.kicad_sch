@@ -4052,6 +4052,10 @@
 		(uuid "03103b19-d56d-4f3f-b49c-153f56145738")
 	)
 	(no_connect
+		(at 173.99 123.19)
+		(uuid "10f8ef2d-f950-462a-9397-6f7fbbedb625")
+	)
+	(no_connect
 		(at 173.99 100.33)
 		(uuid "2a434bdc-8c32-4883-874e-4f024ada0bb2")
 	)
@@ -4060,16 +4064,24 @@
 		(uuid "306d7683-5efb-4057-8467-e348d018efb9")
 	)
 	(no_connect
-		(at 173.99 133.35)
-		(uuid "39fc694a-8a93-4fbf-984d-ab24792a645f")
-	)
-	(no_connect
 		(at 173.99 115.57)
 		(uuid "3b365140-95d2-43cb-935a-831416a72a45")
 	)
 	(no_connect
+		(at 173.99 85.09)
+		(uuid "41d7276f-2145-42e2-8071-b025c90a4b9d")
+	)
+	(no_connect
+		(at 123.19 110.49)
+		(uuid "4ad6d6f0-3b78-4141-a879-fad3cfef78b3")
+	)
+	(no_connect
 		(at 173.99 120.65)
 		(uuid "4e9f33ee-6d51-4282-8e59-470133188fbb")
+	)
+	(no_connect
+		(at 173.99 125.73)
+		(uuid "50d4dc2f-7570-4207-b1ec-21e70c6eb662")
 	)
 	(no_connect
 		(at 173.99 69.85)
@@ -4104,10 +4116,6 @@
 		(uuid "71f0a0ff-8c7e-429d-a0cd-27e2542b9ddd")
 	)
 	(no_connect
-		(at 173.99 130.81)
-		(uuid "72016e0d-3bfb-4c92-bf8c-57b32721b91e")
-	)
-	(no_connect
 		(at 173.99 113.03)
 		(uuid "764cad08-f837-46ea-af76-98ca34fb08de")
 	)
@@ -4118,6 +4126,10 @@
 	(no_connect
 		(at 123.19 107.95)
 		(uuid "7f15fb9e-c6d2-4f04-992f-5c1bb2c1bc6a")
+	)
+	(no_connect
+		(at 173.99 87.63)
+		(uuid "97d54852-4b1f-40fb-ac0b-f4179ecc803e")
 	)
 	(no_connect
 		(at 99.06 170.18)
@@ -4144,8 +4156,16 @@
 		(uuid "d8472e9e-2e67-4e95-852a-be2ba99462dc")
 	)
 	(no_connect
+		(at 123.19 113.03)
+		(uuid "da4865d1-cb80-4472-8ed5-2a7926f49e44")
+	)
+	(no_connect
 		(at 99.06 180.34)
 		(uuid "da879eca-3150-4eef-9563-757aa3d8966f")
+	)
+	(no_connect
+		(at 173.99 82.55)
+		(uuid "ea674dd4-1729-420a-8962-87f06c84d656")
 	)
 	(no_connect
 		(at 173.99 138.43)
@@ -4415,16 +4435,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 113.03) (xy 93.98 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f0c1263-c246-42c9-b4cb-75057437ecf5")
-	)
-	(wire
-		(pts
 			(xy 110.49 120.65) (xy 123.19 120.65)
 		)
 		(stroke
@@ -4655,6 +4665,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 130.81) (xy 203.2 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "854b4154-8ded-4b99-80ea-24cc544000d8")
+	)
+	(wire
+		(pts
 			(xy 234.315 100.33) (xy 234.315 94.615)
 		)
 		(stroke
@@ -4762,16 +4782,6 @@
 			(type default)
 		)
 		(uuid "a00f67d4-a5ca-4ed8-9a3f-5e616ab16923")
-	)
-	(wire
-		(pts
-			(xy 93.98 110.49) (xy 123.19 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a017fb18-6349-4d5e-974d-2666f1859417")
 	)
 	(wire
 		(pts
@@ -5095,6 +5105,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 133.35) (xy 173.99 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f32adb7f-493f-42ef-8a9a-e46c55691261")
+	)
+	(wire
+		(pts
 			(xy 116.84 62.23) (xy 123.19 62.23)
 		)
 		(stroke
@@ -5213,16 +5233,6 @@
 		)
 		(uuid "449a82d1-43d3-40e3-9dbe-894b56fadb33")
 	)
-	(label "LED1"
-		(at 93.98 113.03 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4ac65dad-a121-43db-afcc-38f6ab5e5b6a")
-	)
 	(label "SWDIO"
 		(at 209.55 97.79 180)
 		(effects
@@ -5263,6 +5273,16 @@
 		)
 		(uuid "6d36e217-1665-473c-a245-6561de047ab5")
 	)
+	(label "LED2"
+		(at 203.2 133.35 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9249d54a-f096-44da-8b87-8ca002717dc8")
+	)
 	(label "USB_D+"
 		(at 107.95 175.26 180)
 		(effects
@@ -5282,6 +5302,16 @@
 			(justify left bottom)
 		)
 		(uuid "a0b89508-f63a-4f0d-8281-05e835e174fd")
+	)
+	(label "LED1"
+		(at 203.2 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a1b872a9-3b07-4d33-ad91-185976a939a1")
 	)
 	(label "USB_D-"
 		(at 107.95 177.8 180)
@@ -5332,16 +5362,6 @@
 			(justify right bottom)
 		)
 		(uuid "f3d37583-8a20-426d-a853-026e536898d3")
-	)
-	(label "LED2"
-		(at 93.98 110.49 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f8172d26-cbc0-41c2-b730-7231e056883e")
 	)
 	(hierarchical_label "3V3A_LDO_EN"
 		(shape input)
