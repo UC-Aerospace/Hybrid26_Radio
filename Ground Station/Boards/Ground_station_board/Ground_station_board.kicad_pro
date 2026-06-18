@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.825,
-          "width": 0.25
+          "drill": 0.8,
+          "height": 1.27,
+          "width": 2.54
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -64,7 +64,7 @@
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
-          "remove_islands": 2,
+          "remove_islands": 1,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
         }
@@ -76,20 +76,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "copper_edge_clearance|144600000|136250000|515bdb41-3824-41f6-b9ac-e57b0ef4049c|195f6539-3f5b-4c55-8b29-37473e26b1c4",
-          "USB Plug Edge"
-        ],
-        [
-          "copper_edge_clearance|147000000|136250000|515bdb41-3824-41f6-b9ac-e57b0ef4049c|b7986766-63a4-41fa-9655-0a266b44087a",
-          "USB Plug Edge"
-        ],
-        [
-          "silk_overlap|130080093|109967782|9ee8d6d6-f671-4a0e-bfdb-648b5c6e2605|f0994f64-4e6d-49c6-87de-3de50507219b",
-          "joella"
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -129,9 +116,9 @@
         "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
-        "npth_inside_courtyard": "ignore",
+        "npth_inside_courtyard": "error",
         "padstack": "warning",
-        "pth_inside_courtyard": "ignore",
+        "pth_inside_courtyard": "error",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
@@ -169,13 +156,13 @@
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.7,
+        "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
+        "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.005,
+        "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -224,11 +211,8 @@
       ],
       "track_widths": [
         0.0,
-        0.15,
-        0.172,
-        0.2,
-        0.4,
-        0.6
+        0.1422,
+        0.2
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -275,7 +259,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "A"
+      "sch_revision": ""
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -295,24 +279,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "power_pin_not_driven|1155700|1066800|2c4963e8-023c-401b-9a0f-dcf58c354188|00000000-0000-0000-0000-000000000000|/4940ffbe-f45f-4917-a247-12e2b32b6c35/abcae1e2-b29e-4289-bda9-47e90da98056|/4940ffbe-f45f-4917-a247-12e2b32b6c35/abcae1e2-b29e-4289-bda9-47e90da98056|",
-        "Joella"
-      ],
-      [
-        "power_pin_not_driven|698500|1524000|9ea7b886-2a6c-4b9e-9f16-30e23bd3e482|00000000-0000-0000-0000-000000000000|/4940ffbe-f45f-4917-a247-12e2b32b6c35|/4940ffbe-f45f-4917-a247-12e2b32b6c35|",
-        "Joella"
-      ],
-      [
-        "power_pin_not_driven|812800|863600|02305385-2371-4d4b-a4a2-ecd5225a5dd3|00000000-0000-0000-0000-000000000000|/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40|/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40|",
-        "Joella"
-      ],
-      [
-        "power_pin_not_driven|863600|863600|0b91cf8e-b34b-49f0-9a01-3e01e275be79|00000000-0000-0000-0000-000000000000|/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40|/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40|",
-        "Joella"
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -501,7 +468,6 @@
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
-      "global_label_dangling": "warning",
       "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
       "isolated_pin_label": "warning",
@@ -541,14 +507,14 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "rf_rocket_module.kicad_pro",
+    "filename": "Ground_station_board.kicad_pro",
     "version": 3
   },
   "net_settings": {
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.1,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -566,15 +532,12 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.1,
-        "name": "RF_50Ohm",
+        "name": "50_ohm",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1422,
-        "tuning_profile": "",
-        "via_diameter": 0.6,
-        "via_drill": 0.3
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -582,43 +545,10 @@
     },
     "net_colors": null,
     "netclass_assignments": {
-      "/+3V3A": [
-        "RF_50Ohm"
-      ],
       "/LoRav2/ANT_SW": [
         "RF_50Ohm"
       ],
-      "/LoRav2/BUSY": [
-        "RF_50Ohm"
-      ],
-      "/LoRav2/DIO1": [
-        "RF_50Ohm"
-      ],
       "/LoRav2/DIO2": [
-        "RF_50Ohm"
-      ],
-      "/LoRav2/DIO3": [
-        "RF_50Ohm"
-      ],
-      "/LoRav2/MISO": [
-        "RF_50Ohm"
-      ],
-      "/LoRav2/MOSI": [
-        "RF_50Ohm"
-      ],
-      "/LoRav2/NSS": [
-        "RF_50Ohm"
-      ],
-      "/LoRav2/SCK": [
-        "RF_50Ohm"
-      ],
-      "/LoRav2/SX_NRESET": [
-        "RF_50Ohm"
-      ],
-      "/LoRav2/XTA": [
-        "RF_50Ohm"
-      ],
-      "/LoRav2/XTB": [
         "RF_50Ohm"
       ],
       "GND": [
@@ -671,23 +601,16 @@
       ],
       "Net-(U3-VDD)": [
         "RF_50Ohm"
-      ],
-      "VDD_RADIO": [
-        "RF_50Ohm"
       ]
     },
     "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
-      "gencad": "",
       "idf": "",
       "netlist": "",
       "plot": "",
-      "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
-      "svg": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -711,7 +634,7 @@
     },
     "bom_presets": [],
     "bom_settings": {
-      "exclude_dnp": true,
+      "exclude_dnp": false,
       "fields_ordered": [
         {
           "group_by": false,
@@ -744,10 +667,10 @@
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
@@ -760,96 +683,12 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Device",
-          "name": "Sim.Device",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Type",
-          "name": "Sim.Type",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer",
-          "name": "Manufacturer",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "MPN",
-          "name": "MPN",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Description",
-          "name": "Description",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "LCSC Part #",
-          "name": "LCSC Part #",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "DigiKey PN",
-          "name": "DigiKey PN",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Voltage",
-          "name": "Voltage",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Max Temp",
-          "name": "Max Temp",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Min Temp",
-          "name": "Min Temp",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "KLC_S3.3",
-          "name": "KLC_S3.3",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "KLC_S4.1",
-          "name": "KLC_S4.1",
-          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": false,
-      "name": "",
+      "include_excluded_from_bom": true,
+      "name": "Default Editing",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -882,48 +721,36 @@
     "meta": {
       "version": 1
     },
-    "net_format_name": "",
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
-    "space_save_all_events": true,
-    "spice_current_sheet_as_root": false,
-    "spice_external_command": "spice \"%I\"",
-    "spice_model_current_sheet_as_root": true,
-    "spice_save_all_currents": false,
-    "spice_save_all_dissipations": false,
-    "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "rf_rocket_module.kicad_sch",
-        "name": "rf_rocket_module",
-        "uuid": "4940ffbe-f45f-4917-a247-12e2b32b6c35"
+        "filename": "Ground_station_board.kicad_sch",
+        "name": "Root",
+        "uuid": "d352b0d5-8b84-4260-ae1c-bcfbc17c0651"
       }
     ],
-    "used_designators": "D5-8,#PWR44,#PWR47-48,#PWR52-53,#PWR56-57,#PWR59-62,#PWR69,#PWR76-85,C41-54,R13,R17-19,R21-23,J7-8,TP7,U8,Y3",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
     [
-      "4940ffbe-f45f-4917-a247-12e2b32b6c35",
-      "rf_rocket_module"
+      "d352b0d5-8b84-4260-ae1c-bcfbc17c0651",
+      "Root"
     ],
     [
-      "cd7404e7-7bb1-47cb-8f3f-f69e3160ee40",
-      "CAN_Termination"
-    ],
-    [
-      "c4af6750-4012-4fcb-85b8-6e0235f41ddd",
-      "MCU"
-    ],
-    [
-      "ec17b761-2334-4457-8873-4c3a71db4204",
+      "e5057c9c-dee9-4eac-9270-421610d15133",
       "LoRav2"
     ],
     [
-      "abcae1e2-b29e-4289-bda9-47e90da98056",
+      "04f45da5-e6fd-484b-a405-1a99d12d5ff6",
+      "MCU"
+    ],
+    [
+      "2b7ab576-d00f-4175-870c-9fb429710400",
       "Power Input"
     ]
   ],
