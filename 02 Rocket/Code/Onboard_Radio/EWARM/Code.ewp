@@ -1149,6 +1149,12 @@
         <name>$PROJ_DIR$/../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi_ex.c</name>
       </file>
       <file>
+        <name>$PROJ_DIR$/../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_uart.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$/../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_uart_ex.c</name>
+      </file>
+      <file>
         <name>$PROJ_DIR$/../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd.c</name>
       </file>
       <file>
