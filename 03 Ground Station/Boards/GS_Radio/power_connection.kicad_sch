@@ -2173,7 +2173,7 @@
 		)
 		(uuid "6dd3c375-4ab9-4956-8f28-2ec98498e1a4")
 	)
-	(label "+7V4_In"
+	(label "+V_In"
 		(at 26.67 125.73 0)
 		(effects
 			(font

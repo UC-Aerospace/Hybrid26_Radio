@@ -506,6 +506,193 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016)
@@ -3849,6 +4036,18 @@
 		)
 	)
 	(rectangle
+		(start 12.7 119.38)
+		(end 66.04 157.48)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "1a2fe4b1-a7e4-487b-b8c1-1c2f24111335")
+	)
+	(rectangle
 		(start 67.31 158.75)
 		(end 120.65 196.85)
 		(stroke
@@ -3906,6 +4105,19 @@
 			(justify left)
 		)
 		(uuid "8feaa37a-ce62-4acf-a291-61f5bd53a3be")
+	)
+	(text "UART"
+		(exclude_from_sim no)
+		(at 13.462 122.174 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(thickness 0.4064)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "946a2bb0-bab4-47c3-83fe-89a0b8051d6e")
 	)
 	(text "USB"
 		(exclude_from_sim no)
@@ -4094,10 +4306,6 @@
 		(uuid "39955eb6-217c-4372-bf76-3f78591b45b1")
 	)
 	(no_connect
-		(at 173.99 64.77)
-		(uuid "428bbcc5-a259-410e-9618-f049fcee3573")
-	)
-	(no_connect
 		(at 173.99 130.81)
 		(uuid "4f3d6864-c4ac-4b7f-bd54-49af02752e3e")
 	)
@@ -4152,10 +4360,6 @@
 	(no_connect
 		(at 173.99 113.03)
 		(uuid "d8e3f06f-92d0-4040-ba4b-b3843529e7b5")
-	)
-	(no_connect
-		(at 173.99 62.23)
-		(uuid "eabe2a0f-59c9-4b37-8f94-c1a486918e9d")
 	)
 	(no_connect
 		(at 88.9 185.42)
@@ -4258,6 +4462,16 @@
 			(type default)
 		)
 		(uuid "196d5ecc-6c43-4f4c-a601-8f97a3fcc1fd")
+	)
+	(wire
+		(pts
+			(xy 29.21 148.59) (xy 40.64 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "199bb5e2-cf33-4446-a9d9-ca10a522ec64")
 	)
 	(wire
 		(pts
@@ -4561,6 +4775,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 64.77) (xy 209.55 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "616e7635-4a45-4bc7-bd22-c5e1643b3d35")
+	)
+	(wire
+		(pts
 			(xy 146.05 193.04) (xy 151.13 193.04)
 		)
 		(stroke
@@ -4611,6 +4835,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 133.35) (xy 38.1 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66ef5884-a91a-43b5-a236-a6394dc03cf5")
+	)
+	(wire
+		(pts
 			(xy 240.665 100.33) (xy 240.665 94.615)
 		)
 		(stroke
@@ -4628,6 +4862,16 @@
 			(type default)
 		)
 		(uuid "69111dac-471e-430e-b00e-940a0a08375e")
+	)
+	(wire
+		(pts
+			(xy 217.17 64.77) (xy 232.41 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c033a9c-5937-4e32-9a0c-44f336b3526e")
 	)
 	(wire
 		(pts
@@ -4811,6 +5055,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 132.08) (xy 35.56 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8870ea5f-af55-45f6-b295-724ed0b5d128")
+	)
+	(wire
+		(pts
 			(xy 143.51 54.61) (xy 143.51 48.26)
 		)
 		(stroke
@@ -4818,6 +5072,16 @@
 			(type default)
 		)
 		(uuid "8a5b706d-1105-428b-ada3-e35911138ada")
+	)
+	(wire
+		(pts
+			(xy 40.64 132.08) (xy 40.64 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "969a5895-2459-4484-be0f-0a298396102a")
 	)
 	(wire
 		(pts
@@ -4951,6 +5215,16 @@
 	)
 	(wire
 		(pts
+			(xy 25.4 144.78) (xy 35.56 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba3dc901-f004-46a6-abc9-79faa33340dc")
+	)
+	(wire
+		(pts
 			(xy 240.665 81.28) (xy 240.665 86.995)
 		)
 		(stroke
@@ -5061,6 +5335,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 62.23) (xy 232.41 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccdf7977-02e2-4650-9123-a8aa5f5bc761")
+	)
+	(wire
+		(pts
 			(xy 135.89 31.75) (xy 129.54 31.75)
 		)
 		(stroke
@@ -5068,6 +5352,16 @@
 			(type default)
 		)
 		(uuid "d64a42f9-dda2-49a9-bd71-79225e102a4b")
+	)
+	(wire
+		(pts
+			(xy 173.99 62.23) (xy 209.55 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d81f1671-0284-4f8c-a82e-c01598b7cc0c")
 	)
 	(wire
 		(pts
@@ -5219,6 +5513,26 @@
 		)
 		(uuid "00af88bb-0b7e-4be3-862d-7149b7085644")
 	)
+	(label "UART_RX"
+		(at 232.41 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "07992c67-8bae-45ac-a1f2-e502bfbef0c9")
+	)
+	(label "UART_TX"
+		(at 29.21 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0dc91fa5-cec3-4d74-a77b-e945f3628738")
+	)
 	(label "SWCLK"
 		(at 209.55 95.25 180)
 		(effects
@@ -5228,6 +5542,16 @@
 			(justify right bottom)
 		)
 		(uuid "12c30dc7-49a9-4838-9040-c7cd486b0f23")
+	)
+	(label "UART_RX"
+		(at 25.4 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "283b725a-64f7-4152-b257-3988d480872c")
 	)
 	(label "LED2"
 		(at 55.88 167.64 180)
@@ -5378,6 +5702,16 @@
 			(justify left bottom)
 		)
 		(uuid "e001677f-c46f-418e-be15-e97d5aeb654e")
+	)
+	(label "UART_TX"
+		(at 232.41 62.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e6403000-f874-4ab3-ad79-82f2050c8bbd")
 	)
 	(label "SWDIO"
 		(at 140.97 189.23 0)
@@ -6861,6 +7195,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 38.1 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b18cd81-dbd8-4187-a486-5ce1c024f7c1")
+		(property "Reference" "#PWR0114"
+			(at 38.1 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 38.1 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0b2c5926-1419-41e7-a73c-86f4b3fe2cf1")
+		)
+		(instances
+			(project "rf_rocket_module"
+				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/c4af6750-4012-4fcb-85b8-6e0235f41ddd"
+					(reference "#PWR0114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 107.95 36.83 0)
 		(unit 1)
@@ -8120,6 +8532,85 @@
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/c4af6750-4012-4fcb-85b8-6e0235f41ddd"
 					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 213.36 62.23 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "49b13a9a-6891-424d-9840-560462bc83fc")
+		(property "Reference" "R2"
+			(at 213.36 60.198 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 213.36 62.23 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 213.36 64.008 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 213.36 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "61dc84b2-b739-40b0-8b76-8e080bcc6ec5")
+		)
+		(pin "2"
+			(uuid "f4eee2cd-a8d7-44d1-96b2-ed145d0ca9e6")
+		)
+		(instances
+			(project "rf_rocket_module"
+				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/c4af6750-4012-4fcb-85b8-6e0235f41ddd"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -10946,6 +11437,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 213.36 64.77 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c4539336-ee49-4c00-9205-26b89a677db3")
+		(property "Reference" "R5"
+			(at 213.36 67.056 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 213.36 64.77 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 213.36 66.548 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 213.36 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dc8af913-5194-4517-8085-18dfabaeb11b")
+		)
+		(pin "2"
+			(uuid "2ce956d1-25ec-4d82-9c48-4a163165bc3f")
+		)
+		(instances
+			(project "rf_rocket_module"
+				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/c4af6750-4012-4fcb-85b8-6e0235f41ddd"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 167.64 34.29 0)
 		(unit 1)
@@ -11678,6 +12248,112 @@
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/c4af6750-4012-4fcb-85b8-6e0235f41ddd"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 38.1 127 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e20a999b-a6a1-4395-b60f-451a8fb7d7b7")
+		(property "Reference" "J15"
+			(at 43.18 125.7299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "UART JST"
+			(at 43.18 128.2699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical"
+			(at 38.1 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
+			(at 38.1 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 38.1 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "B3B-PH-K-S"
+			(at 38.1 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 38.1 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8711dcf5-64ee-4e1c-ae51-02846abf9cde")
+		)
+		(pin "1"
+			(uuid "e9aa8f74-c886-4827-814f-2ceab8e2f0ba")
+		)
+		(pin "3"
+			(uuid "30fe5172-eea6-4834-80f2-0f073830da9f")
+		)
+		(instances
+			(project "rf_rocket_module"
+				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/c4af6750-4012-4fcb-85b8-6e0235f41ddd"
+					(reference "J15")
 					(unit 1)
 				)
 			)

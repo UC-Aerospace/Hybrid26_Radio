@@ -7608,7 +7608,7 @@
 		(dnp no)
 		(uuid "31dec258-d86a-43d0-8c27-07a00fd37a4e")
 		(property "Reference" "R5"
-			(at 213.868 67.056 90)
+			(at 213.36 67.056 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7617,7 +7617,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "0R"
 			(at 213.36 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7627,7 +7627,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 213.36 66.548 90)
 			(hide yes)
 			(show_name no)
@@ -9649,10 +9649,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "73bb39be-b9c8-43f5-9569-f5d4d592f884")
 		(property "Reference" "R2"
-			(at 213.36 55.88 90)
+			(at 213.36 60.198 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9661,8 +9660,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 213.36 58.42 90)
+		(property "Value" "0R"
+			(at 213.36 62.23 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9671,7 +9670,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 213.36 64.008 90)
 			(hide yes)
 			(show_name no)
