@@ -32,6 +32,19 @@
     "eae0e89a-54a6-47ea-a37c-c074e788481e": [
       {
         "config": {
+          "pattern": "Stagger Rows",
+          "spacing": 5.0,
+          "clearance": 1.5,
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "via_settings": null
+        },
+        "group_id": "1f666476-f586-49ca-8a66-16a8e6594001"
+      },
+      {
+        "config": {
           "pattern": "Grid",
           "spacing": 7.000000000000011,
           "clearance": 1.0,

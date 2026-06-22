@@ -2392,6 +2392,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 121.92) (xy 257.81 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "722acf79-64fa-4161-9e22-87e3e8a2f6ff")
+	)
+	(wire
+		(pts
 			(xy 214.63 127) (xy 214.63 130.81)
 		)
 		(stroke
@@ -2462,6 +2472,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 123.19) (xy 243.84 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94af2600-254e-43c5-9f39-d7be3cbce7b1")
+	)
+	(wire
+		(pts
 			(xy 209.55 127) (xy 198.12 127)
 		)
 		(stroke
@@ -2529,16 +2549,6 @@
 			(type default)
 		)
 		(uuid "a877fccd-8758-4d7f-87df-1e2ccddaa531")
-	)
-	(wire
-		(pts
-			(xy 243.84 123.19) (xy 247.65 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab9783ec-6933-4751-b89f-883b058b53a4")
 	)
 	(wire
 		(pts
@@ -2893,17 +2903,6 @@
 			(justify right)
 		)
 		(uuid "a3d00a67-46e5-493b-97fd-7830ac4d2847")
-	)
-	(hierarchical_label "CAN_PWR_IN"
-		(shape input)
-		(at 247.65 123.19 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ebb6d82d-3f97-4bd3-af8c-bd70669b07fe")
 	)
 	(hierarchical_label "CAN1_AUX"
 		(shape input)
@@ -4336,6 +4335,84 @@
 			(project "rf_rocket_module"
 				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 257.81 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "83cce3d7-7d41-4191-b439-6ee4d1a7debe")
+		(property "Reference" "#PWR048"
+			(at 257.81 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 257.81 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 257.81 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 257.81 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 257.81 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "95c7dbef-f273-4a4e-8d3d-73d454acaac2")
+		)
+		(instances
+			(project "rf_rocket_module"
+				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35/cd7404e7-7bb1-47cb-8f3f-f69e3160ee40"
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)

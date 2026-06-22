@@ -133,146 +133,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Mechanical:MountingHole_Pad"
 			(pin_numbers
 				(hide yes)
@@ -987,16 +847,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 27.94) (xy 69.85 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b119258-ceaa-44b9-89fb-15b88a602fea")
-	)
-	(wire
-		(pts
 			(xy 52.07 46.99) (xy 77.47 46.99)
 		)
 		(stroke
@@ -1004,16 +854,6 @@
 			(type default)
 		)
 		(uuid "0e6786e4-9b82-4bcd-b95c-155a5fa8bbfb")
-	)
-	(wire
-		(pts
-			(xy 64.77 74.93) (xy 52.07 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11a6429f-8b0c-4af3-aeb1-9e6976ebc765")
 	)
 	(wire
 		(pts
@@ -1064,26 +904,6 @@
 			(type default)
 		)
 		(uuid "5bf81e4a-97fd-4788-b037-91d7ddf5f59f")
-	)
-	(wire
-		(pts
-			(xy 144.78 52.07) (xy 157.48 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c8d987a-aa68-4d88-9373-4185ecef0973")
-	)
-	(wire
-		(pts
-			(xy 52.07 33.02) (xy 69.85 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "683d0966-1d8c-47d6-b855-6ee82132cccd")
 	)
 	(wire
 		(pts
@@ -1217,26 +1037,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 22.86) (xy 77.47 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa2c4e6a-e08c-440b-8ccf-4b7faaeeed89")
-	)
-	(wire
-		(pts
-			(xy 52.07 38.1) (xy 54.61 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b523656e-d389-41ac-acb2-b9602e18b812")
-	)
-	(wire
-		(pts
 			(xy 124.46 48.26) (xy 157.48 48.26)
 		)
 		(stroke
@@ -1297,16 +1097,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 38.1) (xy 69.85 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4a51169-2a0a-42d5-8069-8f4f9bb0867d")
-	)
-	(wire
-		(pts
 			(xy 52.07 82.55) (xy 77.47 82.55)
 		)
 		(stroke
@@ -1324,56 +1114,6 @@
 			(type default)
 		)
 		(uuid "fdf11cc6-1a99-4d3a-bf88-0a3d14b37707")
-	)
-	(label "+5V"
-		(at 69.85 33.02 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "08d206de-753d-4804-8abb-6a516f51e66a")
-	)
-	(label "+7V4"
-		(at 64.77 74.93 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "26e79d4c-c526-4805-b354-6a01db560e68")
-	)
-	(label "+7V4"
-		(at 69.85 38.1 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "978ebf81-299f-46e7-bef7-229ea1d0daca")
-	)
-	(label "+3V3A"
-		(at 69.85 27.94 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ccf7a5cf-8a1c-46bc-b4b2-7305d8dd9191")
-	)
-	(label "+3V3A"
-		(at 144.78 52.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d033b64f-b1d7-44eb-ae98-1323a77e647e")
 	)
 	(symbol
 		(lib_id "power:+5V")
@@ -2925,140 +2665,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 58.42 38.1 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e6ff61e6-769e-4e64-a23d-3e63d6dd6a97")
-		(property "Reference" "R20"
-			(at 58.42 36.068 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 58.42 38.1 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 58.42 39.878 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 58.42 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "0 Ohms Jumper 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
-			(at 58.42 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CRCW06030000Z0EA"
-			(at 58.42 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Vishay Dale"
-			(at 58.42 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 58.42 38.1 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
-			(at 58.42 38.1 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C844915"
-			(at 58.42 38.1 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "600623ad-b609-4b8e-937c-a9cdd9a6309c")
-		)
-		(pin "2"
-			(uuid "aca28d01-1817-4c1d-bbd5-d31b07fd2e8c")
-		)
-		(instances
-			(project "rf_rocket_module"
-				(path "/4940ffbe-f45f-4917-a247-12e2b32b6c35"
-					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 40.64 158.75 90)
 		(unit 1)
@@ -3260,46 +2866,6 @@
 				(justify left top)
 			)
 		)
-		(pin "+3V3A_Input" input
-			(at 52.07 27.94 0)
-			(uuid "b169335c-fb3f-4d65-b495-904710f7d84b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "+3V3_Input" input
-			(at 52.07 22.86 0)
-			(uuid "731a51cc-497e-4634-a105-89aa58681ccc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "+5V_Input" input
-			(at 52.07 33.02 0)
-			(uuid "b4105032-5fde-451f-9a69-2ddca098a6f1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "+7V4_Input" input
-			(at 52.07 38.1 0)
-			(uuid "af4f24e1-3cac-4658-a71b-9edbf7e51725")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "3V3A_LDO_EN" input
 			(at 52.07 46.99 0)
 			(uuid "cb30cf9a-a383-4bda-b3e4-f0c2d00cf2d3")
@@ -3364,16 +2930,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "+3V3" input
-			(at 77.47 22.86 180)
-			(uuid "0bbe3884-ba31-499d-8535-8202781c33bc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(pin "SPI1_MISO" input
@@ -3602,16 +3158,6 @@
 				(justify right)
 			)
 		)
-		(pin "CAN_PWR_IN" input
-			(at 52.07 74.93 0)
-			(uuid "b3d65371-9ab8-4a86-a5ab-f8921a29adaa")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "CAN_STB1" input
 			(at 52.07 95.25 0)
 			(uuid "e0c8344c-187f-46cc-b691-8c267a25ccc5")
@@ -3731,16 +3277,6 @@
 		(pin "BUSY" input
 			(at 157.48 30.48 180)
 			(uuid "79981451-28da-4fda-b14d-9cfbc32bf366")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "+3V3A" input
-			(at 157.48 52.07 180)
-			(uuid "172d54f1-e8a2-46a9-9a67-953613f13d39")
 			(effects
 				(font
 					(size 1.27 1.27)
