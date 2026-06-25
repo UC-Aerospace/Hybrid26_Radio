@@ -4363,14 +4363,15 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
-			(at 257.81 116.84 0)
+		(property "Value" "+7V4"
+			(at 260.35 120.6499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""

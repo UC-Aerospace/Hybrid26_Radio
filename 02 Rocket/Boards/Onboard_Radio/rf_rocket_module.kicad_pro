@@ -40,8 +40,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 1.55,
-          "width": 0.3
+          "height": 0.3,
+          "width": 1.55
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -60,8 +60,8 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.2,
-          "min_island_area": 10.0,
+          "min_clearance": 0.0,
+          "min_island_area": 20.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
           "remove_islands": 0,
@@ -78,19 +78,19 @@
       ],
       "drc_exclusions": [
         [
-          "copper_edge_clearance|148725000|136250000|515bdb41-3824-41f6-b9ac-e57b0ef4049c|195f6539-3f5b-4c55-8b29-37473e26b1c4",
+          "copper_edge_clearance|137545000|124675000|515bdb41-3824-41f6-b9ac-e57b0ef4049c|195f6539-3f5b-4c55-8b29-37473e26b1c4",
           "joella"
         ],
         [
-          "copper_edge_clearance|151125000|136250000|515bdb41-3824-41f6-b9ac-e57b0ef4049c|b7986766-63a4-41fa-9655-0a266b44087a",
+          "copper_edge_clearance|139945000|124675000|515bdb41-3824-41f6-b9ac-e57b0ef4049c|b7986766-63a4-41fa-9655-0a266b44087a",
           "joella"
         ],
         [
-          "lib_footprint_mismatch|150625000|135255000|d156b372-225f-45d9-b699-1d6a1e95fb67|00000000-0000-0000-0000-000000000000",
+          "lib_footprint_mismatch|139445000|123680000|d156b372-225f-45d9-b699-1d6a1e95fb67|00000000-0000-0000-0000-000000000000",
           "joella"
         ],
         [
-          "silk_overlap|130080093|109967782|9ee8d6d6-f671-4a0e-bfdb-648b5c6e2605|f0994f64-4e6d-49c6-87de-3de50507219b",
+          "silk_overlap|118900093|98392782|9ee8d6d6-f671-4a0e-bfdb-648b5c6e2605|f0994f64-4e6d-49c6-87de-3de50507219b",
           "joella"
         ]
       ],
@@ -923,7 +923,7 @@
         "uuid": "4940ffbe-f45f-4917-a247-12e2b32b6c35"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR56",
     "variants": []
   },
   "sheets": [
