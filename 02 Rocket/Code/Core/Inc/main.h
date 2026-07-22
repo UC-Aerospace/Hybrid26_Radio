@@ -57,15 +57,28 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define SX1262_CS_Pin GPIO_PIN_4
-#define SX1262_CS_GPIO_Port GPIOA
+#define A3V3_LDO_EN_Pin GPIO_PIN_13
+#define A3V3_LDO_EN_GPIO_Port GPIOC
+#define D3V3_LDO_EN_Pin GPIO_PIN_14
+#define D3V3_LDO_EN_GPIO_Port GPIOC
+#define Antenna_Switch_Pin GPIO_PIN_2
+#define Antenna_Switch_GPIO_Port GPIOA
 #define SX1262_RESET_Pin GPIO_PIN_0
 #define SX1262_RESET_GPIO_Port GPIOB
 #define SX1262_BUSY_Pin GPIO_PIN_1
 #define SX1262_BUSY_GPIO_Port GPIOB
 #define SX1262_DIO1_Pin GPIO_PIN_2
 #define SX1262_DIO1_GPIO_Port GPIOB
-#define SX1262_DIO1_EXTI_IRQn EXTI2_IRQn
+#define CAN1_AUX_Pin GPIO_PIN_8
+#define CAN1_AUX_GPIO_Port GPIOA
+#define CAN_STB1_Pin GPIO_PIN_9
+#define CAN_STB1_GPIO_Port GPIOA
+#define CAN2_AUX_Pin GPIO_PIN_10
+#define CAN2_AUX_GPIO_Port GPIOA
+#define LED1_Pin GPIO_PIN_10
+#define LED1_GPIO_Port GPIOC
+#define LED2_Pin GPIO_PIN_11
+#define LED2_GPIO_Port GPIOC
 
 /* USER CODE BEGIN Private defines */
 

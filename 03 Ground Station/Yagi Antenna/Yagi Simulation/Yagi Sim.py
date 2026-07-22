@@ -25,13 +25,13 @@ def main():
     # ----------------------------
     # Build specification (do not change)
     # ----------------------------
-    f_mhz = 915.0  # MHz
+    f_mhz = 924.0  # MHz
     f = f_mhz * 1e6  # Hz
     c = const.c  # m/s
     lambda_m = c / f  # m
     lambda_mm = lambda_m * 1e3  # mm
 
-    d_mm = 4.0  # element diameter mm
+    d_mm = 4.7  # element diameter mm
     d_m = d_mm / 1e3
     boom_length_mm = 224.0
     boom_length_m = boom_length_mm / 1e3
