@@ -1,0 +1,46 @@
+# ninja log v7
+328	1592	8077113160132080	CMakeFiles/Code.dir/startup_stm32h562xx.s.obj	e5f177b7d9fcbb11
+244	2255	8077113159324370	CMakeFiles/Code.dir/Core/Src/sysmem.c.obj	b87a4adb226422a8
+281	2810	8077113159735990	CMakeFiles/Code.dir/Core/Src/syscalls.c.obj	52204cc19ec47ae7
+211	8272	8077113158964000	CMakeFiles/Code.dir/Core/Src/stm32h5xx_hal_msp.c.obj	a1dbf62486850f92
+363	9106	8077113160492710	CMakeFiles/Code.dir/Core/Src/scheduler.c.obj	a3eea2f2839a08fb
+240	3869	8077127766198430	CMakeFiles/Code.dir/Core/Src/radio.c.obj	85a0dc0033d63c46
+528	9608	8077113162196850	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.c.obj	f066102bca22448b
+169	8470	8077113158622050	CMakeFiles/Code.dir/Core/Src/stm32h5xx_it.c.obj	5a09f009801da78f
+569	9454	8077113162615570	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_fdcan.c.obj	46fbf240baeb59c8
+483	8804	8077113161784740	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h5xx.c.obj	c5eb85c568bf0843
+612	9265	8077113163158190	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.c.obj	6b1228dece42dd96
+763	10332	8077113164967000	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_flash_ex.c.obj	7c89b0c928311f22
+158	3914	8077127765702040	CMakeFiles/Code.dir/Core/Src/main.c.obj	c1ab4774f736ae83
+916	10157	8077113166253160	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c.obj	c13678ca7b7de715
+665	10238	8077113163632620	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c.obj	61eef96df8077c4c
+718	10417	8077113164140870	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_flash.c.obj	137a0fa295d1bd9f
+847	10045	8077113165638560	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_gpio.c.obj	8f079aafbeecbe0
+1718	10499	8077113174107230	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma_ex.c.obj	e4e979ff270c35c4
+2260	10590	8077113179784990	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr.c.obj	f326675351140bda
+2814	10691	8077113185196580	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr_ex.c.obj	593240291f479ba
+8278	13146	8077113239786280	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.c.obj	efff0e85bab6a3f9
+8479	13077	8077113242051420	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_exti.c.obj	c7bebe48ef455dcd
+8808	13288	8077113245144570	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_icache.c.obj	fd74cac201aafe17
+9110	13624	8077113248233370	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi_ex.c.obj	fcf1684ac5e2e8b5
+8940	13767	8077113246868830	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi.c.obj	ded483d7892b034a
+9460	14108	8077113251616390	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_uart_ex.c.obj	f2de5f8161af4455
+9301	14031	8077113250089800	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_uart.c.obj	fae864e2f9030ae4
+9612	14168	8077113253120220	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd.c.obj	83ee57fe58884a00
+9756	14252	8077113254594380	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd_ex.c.obj	4c60da7de1d0af0a
+9894	14316	8077113255935040	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c.obj	9653afaf4ad40ce4
+3918	8964	8077127802942060	Code.elf	96b890f3ebb970a4
+118	4646	8077142480919480	build.ninja	4e5c7f6e3bf8d04
+118	4646	8077142470806230	P:/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake_install.cmake	4e5c7f6e3bf8d04
+118	4646	8077142474581010	P:/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake/stm32cubemx/cmake_install.cmake	4e5c7f6e3bf8d04
+434	9889	8077113161344650	CMakeFiles/Code.dir/Core/Src/can_bus.c.obj	92c7f65af9ccc849
+185	1415	8077122319210180	CMakeFiles/Code.dir/Core/Src/radio_test.c.obj	ab93540305ec8bcc
+286	3705	8077127766687060	CMakeFiles/Code.dir/Core/Src/log.c.obj	7aa7397cb62653c2
+174	5046	8077142480919480	build.ninja	4e5c7f6e3bf8d04
+174	5046	8077142480919480	P:/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake_install.cmake	4e5c7f6e3bf8d04
+174	5046	8077142480919480	P:/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake/stm32cubemx/cmake_install.cmake	4e5c7f6e3bf8d04
+176	1608	8077142487977690	CMakeFiles/Code.dir/Core/Src/can_radio_bridge.c.obj	3edd0ba9e34f5509
+128	3883	8077142487479790	CMakeFiles/Code.dir/Core/Src/main.c.obj	c1ab4774f736ae83
+3888	9455	8077142525055360	Code.elf	26381505f5c23575
+146	3389	8077142782258820	CMakeFiles/Code.dir/Core/Src/main.c.obj	c1ab4774f736ae83
+3435	8672	8077142815150740	Code.elf	26381505f5c23575

@@ -81,7 +81,8 @@ void Error_Handler(void);
 #define LED2_GPIO_Port GPIOC
 
 /* USER CODE BEGIN Private defines */
-
+#define SX1262_NSS_Pin GPIO_PIN_4
+#define SX1262_NSS_GPIO_Port GPIOA
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

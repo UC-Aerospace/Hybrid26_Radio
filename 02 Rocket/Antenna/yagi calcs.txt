@@ -1,0 +1,38 @@
+Javascript Version 2026-05-02 by 3G-Aerial,
+based on DL6WU.BAS source code
+Long-yagi DL6WU
+———————————————————————————————
+Driven element (dipole) form: Straight
+Element shape: Round
+Boom with a square cross section.
+———————————————————————————————
+Frequency f: 904 MHz
+Wavelength λ: 332 mm
+Element diameter d: 1.5 mm
+Boom side D: 15 mm
+
+Total number of elements: 5
+Boom length: 224 mm
+Gain: 10 dBi (approx.)
+———————————————————————————————
+Reflector length R: 174 mm
+Reflector position R = 0
+———————————————————————————————
+Dipole length F: 169 mm
+Dipole position F (R-F): 66.3 mm
+Gap at connection point g <= 4.4 mm
+———————————————————————————————
+Length D1: 158 mm
+Director position D1 (R-D1): 91.2 mm
+Distance F-D1: 24.9 mm
+———————————————————————————————
+Length D2: 157 mm
+Director position D2 (R-D2): 151 mm
+Distance D1-D2: 59.7 mm
+———————————————————————————————
+Length D3: 155 mm
+Director position D3 (R-D3): 222 mm
+Distance D2-D3: 71.3 mm
+———————————————————————————————
+Elements are mounted in the boom center and have contact with it.
+The calculation is taking into account the boom-correction.

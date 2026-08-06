@@ -21,7 +21,11 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "scheduler.h"
+#include "radio.h"
+#include "can_bus.h"
+#include "radio_test.h"
+#include "can_radio_bridge.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -31,7 +35,19 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+/* Set to 1 to run the radio-only heartbeat test (no CAN) instead of normal
+ * operation: transmits an incrementing counter every 50 ms. Rebuild and
+ * reflash to switch modes. */
+#define TEST_MODE_RADIO 0
 
+#define ROLE_ROCKET 0
+#define ROLE_GROUND 1
+
+/* Set to ROLE_ROCKET for the onboard/rocket board (forwards every received
+ * CAN frame over the radio, verbatim) or ROLE_GROUND for the ground station
+ * (listens continuously and logs received packets over UART4). Rebuild and
+ * reflash to switch roles. Ignored while TEST_MODE_RADIO is 1. */
+#define BOARD_ROLE ROLE_ROCKET
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -63,12 +79,22 @@ static void MX_SPI1_Init(void);
 static void MX_USB_PCD_Init(void);
 static void MX_UART4_Init(void);
 /* USER CODE BEGIN PFP */
-
+#if !TEST_MODE_RADIO && (BOARD_ROLE == ROLE_GROUND)
+static void GroundStation_Task(void);
+#endif
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+#if !TEST_MODE_RADIO && (BOARD_ROLE == ROLE_GROUND)
+static void GroundStation_Task(void)
+{
+    if (!Radio_IsBusy())
+    {
+        Radio_StartReceive();
+    }
+}
+#endif
 /* USER CODE END 0 */
 
 /**
@@ -109,7 +135,22 @@ int main(void)
   MX_USB_PCD_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
-
+  Scheduler_Init();
+  Radio_Init();
+  Scheduler_AddTask(Radio_Task, 5);
+#if TEST_MODE_RADIO
+  RadioTest_Init();
+  Scheduler_AddTask(RadioTest_Task, 50);
+#else
+  CanBus_Init();
+  Scheduler_AddTask(CanBus_Task, 5);
+#if BOARD_ROLE == ROLE_ROCKET
+  Scheduler_AddTask(CanRadioBridge_Task, 5);
+#else
+  Radio_StartReceive();
+  Scheduler_AddTask(GroundStation_Task, 5);
+#endif
+#endif
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -119,6 +160,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    Scheduler_Run();
   }
   /* USER CODE END 3 */
 }
@@ -141,23 +183,18 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI48|RCC_OSCILLATORTYPE_HSI
-                              |RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
-  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-  RCC_OscInitStruct.HSIDiv = RCC_HSI_DIV2;
-  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.HSI48State = RCC_HSI48_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLL1_SOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLM = 8;
-  RCC_OscInitStruct.PLL.PLLN = 64;
-  RCC_OscInitStruct.PLL.PLLP = 4;
-  RCC_OscInitStruct.PLL.PLLQ = 2;
+  RCC_OscInitStruct.PLL.PLLM = 1;
+  RCC_OscInitStruct.PLL.PLLN = 10;
+  RCC_OscInitStruct.PLL.PLLP = 2;
+  RCC_OscInitStruct.PLL.PLLQ = 3;
   RCC_OscInitStruct.PLL.PLLR = 2;
-  RCC_OscInitStruct.PLL.PLLRGE = RCC_PLL1_VCIRANGE_0;
+  RCC_OscInitStruct.PLL.PLLRGE = RCC_PLL1_VCIRANGE_3;
   RCC_OscInitStruct.PLL.PLLVCOSEL = RCC_PLL1_VCORANGE_WIDE;
-  RCC_OscInitStruct.PLL.PLLFRACN = 0;
+  RCC_OscInitStruct.PLL.PLLFRACN = 5462;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -168,13 +205,13 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2
                               |RCC_CLOCKTYPE_PCLK3;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSE;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
-  RCC_ClkInitStruct.APB3CLKDivider = RCC_HCLK_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
+  RCC_ClkInitStruct.APB3CLKDivider = RCC_HCLK_DIV2;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
   {
     Error_Handler();
   }
@@ -278,16 +315,16 @@ static void MX_SPI1_Init(void)
   hspi1.Instance = SPI1;
   hspi1.Init.Mode = SPI_MODE_MASTER;
   hspi1.Init.Direction = SPI_DIRECTION_2LINES;
-  hspi1.Init.DataSize = SPI_DATASIZE_4BIT;
+  hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
-  hspi1.Init.NSS = SPI_NSS_HARD_INPUT;
+  hspi1.Init.NSS = SPI_NSS_SOFT;
   hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
   hspi1.Init.CRCPolynomial = 0x7;
-  hspi1.Init.NSSPMode = SPI_NSS_PULSE_ENABLE;
+  hspi1.Init.NSSPMode = SPI_NSS_PULSE_DISABLE;
   hspi1.Init.NSSPolarity = SPI_NSS_POLARITY_LOW;
   hspi1.Init.FifoThreshold = SPI_FIFO_THRESHOLD_01DATA;
   hspi1.Init.MasterSSIdleness = SPI_MASTER_SS_IDLENESS_00CYCLE;
@@ -416,7 +453,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOA, Antenna_Switch_Pin|CAN1_AUX_Pin|CAN_STB1_Pin|CAN2_AUX_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, SX1262_RESET_Pin|SX1262_BUSY_Pin|SX1262_DIO1_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, SX1262_RESET_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : A3V3_LDO_EN_Pin D3V3_LDO_EN_Pin LED1_Pin LED2_Pin */
   GPIO_InitStruct.Pin = A3V3_LDO_EN_Pin|D3V3_LDO_EN_Pin|LED1_Pin|LED2_Pin;
@@ -432,14 +469,28 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : SX1262_RESET_Pin SX1262_BUSY_Pin SX1262_DIO1_Pin */
-  GPIO_InitStruct.Pin = SX1262_RESET_Pin|SX1262_BUSY_Pin|SX1262_DIO1_Pin;
+  /*Configure GPIO pin : SX1262_RESET_Pin */
+  GPIO_InitStruct.Pin = SX1262_RESET_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
+  /*Configure GPIO pins : SX1262_BUSY_Pin SX1262_DIO1_Pin (chip-driven inputs) */
+  GPIO_InitStruct.Pin = SX1262_BUSY_Pin|SX1262_DIO1_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
   /* USER CODE BEGIN MX_GPIO_Init_2 */
+
+  /* Software-controlled SPI1 NSS (SX1262 chip select), idle high */
+  HAL_GPIO_WritePin(SX1262_NSS_GPIO_Port, SX1262_NSS_Pin, GPIO_PIN_SET);
+  GPIO_InitStruct.Pin = SX1262_NSS_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(SX1262_NSS_GPIO_Port, &GPIO_InitStruct);
 
   /* USER CODE END MX_GPIO_Init_2 */
 }

@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"P:/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake_install.cmake",
+		"P:/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake/stm32cubemx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
