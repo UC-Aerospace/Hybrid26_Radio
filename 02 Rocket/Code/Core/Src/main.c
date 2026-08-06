@@ -26,6 +26,8 @@
 #include "can_bus.h"
 #include "radio_test.h"
 #include "can_radio_bridge.h"
+#include "log.h"
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -35,18 +37,13 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-/* Set to 1 to run the radio-only heartbeat test (no CAN) instead of normal
- * operation: transmits an incrementing counter every 50 ms. Rebuild and
- * reflash to switch modes. */
-#define TEST_MODE_RADIO 0
-
 #define ROLE_ROCKET 0
 #define ROLE_GROUND 1
 
 /* Set to ROLE_ROCKET for the onboard/rocket board (forwards every received
  * CAN frame over the radio, verbatim) or ROLE_GROUND for the ground station
- * (listens continuously and logs received packets over UART4). Rebuild and
- * reflash to switch roles. Ignored while TEST_MODE_RADIO is 1. */
+ * (listens continuously and logs received packets over UART4). Only used by
+ * bring-up STAGE 4 below. */
 #define BOARD_ROLE ROLE_ROCKET
 /* USER CODE END PD */
 
@@ -79,14 +76,14 @@ static void MX_SPI1_Init(void);
 static void MX_USB_PCD_Init(void);
 static void MX_UART4_Init(void);
 /* USER CODE BEGIN PFP */
-#if !TEST_MODE_RADIO && (BOARD_ROLE == ROLE_GROUND)
+#if BOARD_ROLE == ROLE_GROUND
 static void GroundStation_Task(void);
 #endif
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-#if !TEST_MODE_RADIO && (BOARD_ROLE == ROLE_GROUND)
+#if BOARD_ROLE == ROLE_GROUND
 static void GroundStation_Task(void)
 {
     if (!Radio_IsBusy())
@@ -95,6 +92,33 @@ static void GroundStation_Task(void)
     }
 }
 #endif
+
+/* Bring-up helpers for STAGE 1 and STAGE 3 below (see USER CODE 2). Each is
+ * only referenced from inside its own commented-out stage block, so expect
+ * a harmless "defined but not used" warning while that stage is inactive. */
+static uint32_t s_stage1_counter = 0;
+
+static void Stage1_UartTask(void)
+{
+    Log_Printf("[%lu] STAGE1 UART OK count=%lu\r\n", HAL_GetTick(), s_stage1_counter++);
+}
+
+static void Stage3_CanLogTask(void)
+{
+    CanBus_Message_t msg;
+
+    while (CanBus_GetReceived(&msg))
+    {
+        char hex[3 * CANBUS_MAX_DATA_LEN + 1];
+        size_t pos = 0;
+
+        for (uint8_t i = 0; i < msg.len; i++)
+        {
+            pos += (size_t)snprintf(hex + pos, sizeof(hex) - pos, "%02X ", msg.data[i]);
+        }
+        Log_Printf("[%lu] STAGE3 CAN id=0x%lX len=%u data=%s\r\n", HAL_GetTick(), msg.id, msg.len, hex);
+    }
+}
 /* USER CODE END 0 */
 
 /**
@@ -136,20 +160,65 @@ int main(void)
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
   Scheduler_Init();
+
+  /* ------------------------------------------------------------------
+   * BRING-UP TEST STAGES
+   *
+   * Each stage below has a description comment (leave it alone) and,
+   * right under it, its own short comment-wrapped code block. Delete
+   * just that inner pair of comment markers to activate one stage's
+   * code, build, flash, and verify it before moving to the next stage.
+   * Each stage assumes the previous one already works. Re-comment a
+   * stage's code before activating the next one's. Leave all of them
+   * commented out and nothing runs; stage 4 is also where production
+   * behavior lives.
+   * ------------------------------------------------------------------ */
+
+  /* ---- STAGE 1: UART4 / Log_Printf sanity check --------------------
+   * No radio, no CAN. Confirms Log_Printf() reaches your terminal or
+   * radio_dashboard.py at all. Expect one "STAGE1 UART OK count=..."
+   * line per second.
+   * -------------------------------------------------------------- */
+  /*
+  Scheduler_AddTask(Stage1_UartTask, 1000);
+  */
+
+  /* ---- STAGE 2: Radio heartbeat (SPI + SX1262) ---------------------
+   * Confirms the SPI link and SX1262 bring-up in isolation: transmits
+   * an incrementing counter every 50 ms. Watch for "RADIO TX" /
+   * "RADIO TXDONE" lines (and "RADIO RX" on the receiving board, if
+   * it's also running and in range).
+   * -------------------------------------------------------------- */
+  /*
   Radio_Init();
-  Scheduler_AddTask(Radio_Task, 5);
-#if TEST_MODE_RADIO
   RadioTest_Init();
+  Scheduler_AddTask(Radio_Task, 5);
   Scheduler_AddTask(RadioTest_Task, 50);
-#else
+  */
+
+  /* ---- STAGE 3: CAN bus sanity check --------------------------------
+   * No radio. Confirms FDCAN1 + TCAN1046 bring-up: logs every CAN
+   * frame received as "STAGE3 CAN id=... len=... data=...".
+   * -------------------------------------------------------------- */
+  /*
   CanBus_Init();
+  Scheduler_AddTask(CanBus_Task, 5);
+  Scheduler_AddTask(Stage3_CanLogTask, 5);
+  */
+
+  /* ---- STAGE 4: Full bridge (production behavior) -------------------
+   * The real rocket/ground logic, exactly as shipped. Set BOARD_ROLE
+   * above to ROLE_ROCKET or ROLE_GROUND before uncommenting this.
+   * -------------------------------------------------------------- */
+  Radio_Init();
+  CanBus_Init();
+  Scheduler_AddTask(Radio_Task, 5);
   Scheduler_AddTask(CanBus_Task, 5);
 #if BOARD_ROLE == ROLE_ROCKET
   Scheduler_AddTask(CanRadioBridge_Task, 5);
 #else
   Radio_StartReceive();
   Scheduler_AddTask(GroundStation_Task, 5);
-#endif
 #endif
   /* USER CODE END 2 */
 
