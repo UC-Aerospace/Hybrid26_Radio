@@ -45,7 +45,7 @@
 #define SX126X_XTAL_FREQ_HZ               32000000UL
 
 #define RADIO_DEFAULT_FREQ_HZ              915000000UL
-#define RADIO_DEFAULT_TX_POWER_DBM         22
+#define RADIO_DEFAULT_TX_POWER_DBM         -9
 #define RADIO_SPI_TIMEOUT_MS               100
 #define RADIO_BUSY_TIMEOUT_MS              1000
 #define RADIO_TX_GUARD_TIMEOUT_MS          4000

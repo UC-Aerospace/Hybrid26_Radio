@@ -159,6 +159,10 @@ int main(void)
   MX_USB_PCD_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
+  /* Defensive re-assert: guarantee the analog 3V3 LDO stays disabled at
+   * startup, regardless of what runs before this point. */
+  HAL_GPIO_WritePin(A3V3_LDO_EN_GPIO_Port, A3V3_LDO_EN_Pin, GPIO_PIN_RESET);
+
   Scheduler_Init();
 
   /* ------------------------------------------------------------------
@@ -210,6 +214,7 @@ int main(void)
    * The real rocket/ground logic, exactly as shipped. Set BOARD_ROLE
    * above to ROLE_ROCKET or ROLE_GROUND before uncommenting this.
    * -------------------------------------------------------------- */
+  /*
   Radio_Init();
   CanBus_Init();
   Scheduler_AddTask(Radio_Task, 5);
@@ -220,6 +225,7 @@ int main(void)
   Radio_StartReceive();
   Scheduler_AddTask(GroundStation_Task, 5);
 #endif
+  */
   /* USER CODE END 2 */
 
   /* Infinite loop */
