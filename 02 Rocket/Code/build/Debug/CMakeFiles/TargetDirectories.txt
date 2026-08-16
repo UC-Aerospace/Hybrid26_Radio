@@ -1,6 +1,6 @@
-P:/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/CMakeFiles/Code.dir
-P:/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/CMakeFiles/edit_cache.dir
-P:/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/CMakeFiles/rebuild_cache.dir
-P:/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
-P:/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
-P:/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
+C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/CMakeFiles/Code.dir
+C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/CMakeFiles/edit_cache.dir
+C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

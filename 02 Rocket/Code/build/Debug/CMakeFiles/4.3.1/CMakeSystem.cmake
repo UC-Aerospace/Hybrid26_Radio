@@ -1,9 +1,9 @@
-set(CMAKE_HOST_SYSTEM "Windows-10.0.22631")
+set(CMAKE_HOST_SYSTEM "Windows-10.0.26200")
 set(CMAKE_HOST_SYSTEM_NAME "Windows")
-set(CMAKE_HOST_SYSTEM_VERSION "10.0.22631")
+set(CMAKE_HOST_SYSTEM_VERSION "10.0.26200")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "AMD64")
 
-include("P:/Desktop/Hybrid26_Radio/02 Rocket/Code/cmake/gcc-arm-none-eabi.cmake")
+include("C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/cmake/gcc-arm-none-eabi.cmake")
 
 set(CMAKE_SYSTEM "Generic")
 set(CMAKE_SYSTEM_NAME "Generic")
