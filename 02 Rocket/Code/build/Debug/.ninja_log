@@ -11,7 +11,7 @@
 483	8804	8077113161784740	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h5xx.c.obj	c5eb85c568bf0843
 612	9265	8077113163158190	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.c.obj	6b1228dece42dd96
 763	10332	8077113164967000	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_flash_ex.c.obj	7c89b0c928311f22
-158	3914	8077127765702040	CMakeFiles/Code.dir/Core/Src/main.c.obj	c1ab4774f736ae83
+153	3560	8077153583034020	CMakeFiles/Code.dir/Core/Src/main.c.obj	c1ab4774f736ae83
 916	10157	8077113166253160	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c.obj	c13678ca7b7de715
 665	10238	8077113163632620	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c.obj	61eef96df8077c4c
 718	10417	8077113164140870	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_flash.c.obj	137a0fa295d1bd9f
@@ -29,32 +29,11 @@
 9612	14168	8077113253120220	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd.c.obj	83ee57fe58884a00
 9756	14252	8077113254594380	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd_ex.c.obj	4c60da7de1d0af0a
 9894	14316	8077113255935040	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c.obj	9653afaf4ad40ce4
-3918	8964	8077127802942060	Code.elf	96b890f3ebb970a4
-118	4646	8077142480919480	build.ninja	4e5c7f6e3bf8d04
-118	4646	8077142470806230	P:/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake_install.cmake	4e5c7f6e3bf8d04
-118	4646	8077142474581010	P:/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake/stm32cubemx/cmake_install.cmake	4e5c7f6e3bf8d04
+3605	8824	8077153617567810	Code.elf	26381505f5c23575
+174	5046	8085484200026000	build.ninja	4e5c7f6e3bf8d04
+174	5046	8085484193750290	P:/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake_install.cmake	4e5c7f6e3bf8d04
+174	5046	8085484196886970	P:/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake/stm32cubemx/cmake_install.cmake	4e5c7f6e3bf8d04
 434	9889	8077113161344650	CMakeFiles/Code.dir/Core/Src/can_bus.c.obj	92c7f65af9ccc849
 185	1415	8077122319210180	CMakeFiles/Code.dir/Core/Src/radio_test.c.obj	ab93540305ec8bcc
 286	3705	8077127766687060	CMakeFiles/Code.dir/Core/Src/log.c.obj	7aa7397cb62653c2
-174	5046	8077142480919480	build.ninja	4e5c7f6e3bf8d04
-174	5046	8077142480919480	P:/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake_install.cmake	4e5c7f6e3bf8d04
-174	5046	8077142480919480	P:/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake/stm32cubemx/cmake_install.cmake	4e5c7f6e3bf8d04
 176	1608	8077142487977690	CMakeFiles/Code.dir/Core/Src/can_radio_bridge.c.obj	3edd0ba9e34f5509
-128	3883	8077142487479790	CMakeFiles/Code.dir/Core/Src/main.c.obj	c1ab4774f736ae83
-3888	9455	8077142525055360	Code.elf	26381505f5c23575
-146	3389	8077142782258820	CMakeFiles/Code.dir/Core/Src/main.c.obj	c1ab4774f736ae83
-3435	8672	8077142815150740	Code.elf	26381505f5c23575
-138	3628	8077151380250770	CMakeFiles/Code.dir/Core/Src/main.c.obj	c1ab4774f736ae83
-3682	9027	8077151415717970	Code.elf	26381505f5c23575
-150	3629	8077151680659160	CMakeFiles/Code.dir/Core/Src/main.c.obj	c1ab4774f736ae83
-3721	8448	8077151716399880	Code.elf	26381505f5c23575
-191	3513	8077152040742470	CMakeFiles/Code.dir/Core/Src/main.c.obj	c1ab4774f736ae83
-3568	8826	8077152074535630	Code.elf	26381505f5c23575
-164	3668	8077152517020920	CMakeFiles/Code.dir/Core/Src/main.c.obj	c1ab4774f736ae83
-3716	9192	8077152552522020	Code.elf	26381505f5c23575
-156	3622	8077152948506550	CMakeFiles/Code.dir/Core/Src/main.c.obj	c1ab4774f736ae83
-3691	8816	8077152983801560	Code.elf	26381505f5c23575
-167	3608	8077153248011640	CMakeFiles/Code.dir/Core/Src/main.c.obj	c1ab4774f736ae83
-3652	8774	8077153282832880	Code.elf	26381505f5c23575
-153	3560	8077153583034020	CMakeFiles/Code.dir/Core/Src/main.c.obj	c1ab4774f736ae83
-3605	8824	8077153617567810	Code.elf	26381505f5c23575
