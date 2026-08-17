@@ -5,7 +5,7 @@
     "cmake.useCMakePresets": true,
     "cmake.defaultConfigurePreset": "Debug",
     "cmake.environment": {
-        "PATH": "C:/Users/tomki/AppData/Local/stm32cube/bundles/cmake/4.3.1+st.1/bin;C:/Users/tomki/AppData/Local/stm32cube/bundles/ninja/1.13.2+st.1/bin;C:/Users/tomki/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin;${env.PATH}"
+        "PATH": "C:/Users/tomki/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64;C:/Users/tomki/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64;C:/Users/tomki/AppData/Local/stm32cube/bundles/cmake/4.3.1+st.1/bin;C:/Users/tomki/AppData/Local/stm32cube/bundles/ninja/1.13.2+st.1/bin;C:/Users/tomki/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin;${env.PATH}"
     },
     "cmake.configureOnOpen": true,
     "python-envs.defaultEnvManager": "ms-python.python:system",
@@ -17,5 +17,6 @@
     ],
     "cmake.configureArgs": [
         "-DCMAKE_COMMAND=cube-cmake"
-    ]
+    ],
+    "serial-monitor.defaultBaud": "115200"
 }

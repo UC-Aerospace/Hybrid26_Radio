@@ -6,9 +6,9 @@ C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Drive
 C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:2546:19:USB_DevInit	24	static
 C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:2576:19:USB_FlushTxFifo	16	static
 C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:2595:19:USB_FlushRxFifo	16	static
-C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:2616:19:USB_ActivateEndpoint	136	static
+C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:2616:19:USB_ActivateEndpoint	144	static
 C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:2753:19:USB_DeactivateEndpoint	96	static
-C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:2812:19:USB_EPStartXfer	80	static
+C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:2812:19:USB_EPStartXfer	104	static
 C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:3026:19:USB_EPSetStall	24	static
 C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:3046:19:USB_EPClearStall	40	static
 C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:3075:19:USB_EPStopXfer	32	static
@@ -21,8 +21,8 @@ C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Drive
 C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:3208:19:USB_DeActivateRemoteWakeup	16	static
 C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:3223:6:USB_WritePMA	48	static
 C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:3280:6:USB_ReadPMA	48	static
-C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:3340:19:USB_HostInit	16	static
-C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:3374:19:USB_ResetPort	16	static
-C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:3394:10:USB_GetHostSpeed	16	static
-C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:3411:10:USB_GetCurrentFrame	16	static
+C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:3332:10:USB_GetCurrentFrame	16	static
+C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:3350:19:USB_HostInit	16	static
+C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:3384:19:USB_ResetPort	16	static
+C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:3404:10:USB_GetHostSpeed	16	static
 C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c:3827:19:USB_StopHost	16	static

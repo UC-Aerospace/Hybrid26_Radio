@@ -22,12 +22,12 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "scheduler.h"
-#include "radio.h"
-#include "can_bus.h"
-#include "radio_test.h"
-#include "can_radio_bridge.h"
 #include "log.h"
-#include <stdio.h>
+// #include "radio.h"
+// #include "can_bus.h"
+// #include "radio_test.h"
+// #include "can_radio_bridge.h"
+// #include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -54,8 +54,6 @@
 
 /* Private variables ---------------------------------------------------------*/
 
-FDCAN_HandleTypeDef hfdcan1;
-
 SPI_HandleTypeDef hspi1;
 
 UART_HandleTypeDef huart4;
@@ -70,7 +68,6 @@ PCD_HandleTypeDef hpcd_USB_DRD_FS;
 void SystemClock_Config(void);
 static void MPU_Config(void);
 static void MX_GPIO_Init(void);
-static void MX_FDCAN1_Init(void);
 static void MX_ICACHE_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_USB_PCD_Init(void);
@@ -103,22 +100,22 @@ static void Stage1_UartTask(void)
     Log_Printf("[%lu] STAGE1 UART OK count=%lu\r\n", HAL_GetTick(), s_stage1_counter++);
 }
 
-static void Stage3_CanLogTask(void)
-{
-    CanBus_Message_t msg;
-
-    while (CanBus_GetReceived(&msg))
-    {
-        char hex[3 * CANBUS_MAX_DATA_LEN + 1];
-        size_t pos = 0;
-
-        for (uint8_t i = 0; i < msg.len; i++)
-        {
-            pos += (size_t)snprintf(hex + pos, sizeof(hex) - pos, "%02X ", msg.data[i]);
-        }
-        Log_Printf("[%lu] STAGE3 CAN id=0x%lX len=%u data=%s\r\n", HAL_GetTick(), msg.id, msg.len, hex);
-    }
-}
+// static void Stage3_CanLogTask(void)
+// {
+//     CanBus_Message_t msg;
+//
+//     while (CanBus_GetReceived(&msg))
+//     {
+//         char hex[3 * CANBUS_MAX_DATA_LEN + 1];
+//         size_t pos = 0;
+//
+//         for (uint8_t i = 0; i < msg.len; i++)
+//         {
+//             pos += (size_t)snprintf(hex + pos, sizeof(hex) - pos, "%02X ", msg.data[i]);
+//         }
+//         Log_Printf("[%lu] STAGE3 CAN id=0x%lX len=%u data=%s\r\n", HAL_GetTick(), msg.id, msg.len, hex);
+//     }
+// }
 /* USER CODE END 0 */
 
 /**
@@ -153,9 +150,11 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_FDCAN1_Init();
   MX_ICACHE_Init();
-  MX_SPI1_Init();
+  /* SPI1 stays uninitialized: no radio bring-up in this stage, and this
+   * avoids MX_SPI1_Init() silently reclaiming PA4 (SX1262 NSS) as a
+   * hardware SPI AF pin out from under the manual GPIO config below. */
+  // MX_SPI1_Init();
   MX_USB_PCD_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
@@ -183,9 +182,7 @@ int main(void)
    * radio_dashboard.py at all. Expect one "STAGE1 UART OK count=..."
    * line per second.
    * -------------------------------------------------------------- */
-  /*
   Scheduler_AddTask(Stage1_UartTask, 1000);
-  */
 
   /* ---- STAGE 2: Radio heartbeat (SPI + SX1262) ---------------------
    * Confirms the SPI link and SX1262 bring-up in isolation: transmits
@@ -297,49 +294,6 @@ void SystemClock_Config(void)
 }
 
 /**
-  * @brief FDCAN1 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_FDCAN1_Init(void)
-{
-
-  /* USER CODE BEGIN FDCAN1_Init 0 */
-
-  /* USER CODE END FDCAN1_Init 0 */
-
-  /* USER CODE BEGIN FDCAN1_Init 1 */
-
-  /* USER CODE END FDCAN1_Init 1 */
-  hfdcan1.Instance = FDCAN1;
-  hfdcan1.Init.ClockDivider = FDCAN_CLOCK_DIV1;
-  hfdcan1.Init.FrameFormat = FDCAN_FRAME_CLASSIC;
-  hfdcan1.Init.Mode = FDCAN_MODE_NORMAL;
-  hfdcan1.Init.AutoRetransmission = DISABLE;
-  hfdcan1.Init.TransmitPause = DISABLE;
-  hfdcan1.Init.ProtocolException = DISABLE;
-  hfdcan1.Init.NominalPrescaler = 16;
-  hfdcan1.Init.NominalSyncJumpWidth = 1;
-  hfdcan1.Init.NominalTimeSeg1 = 1;
-  hfdcan1.Init.NominalTimeSeg2 = 1;
-  hfdcan1.Init.DataPrescaler = 1;
-  hfdcan1.Init.DataSyncJumpWidth = 1;
-  hfdcan1.Init.DataTimeSeg1 = 1;
-  hfdcan1.Init.DataTimeSeg2 = 1;
-  hfdcan1.Init.StdFiltersNbr = 0;
-  hfdcan1.Init.ExtFiltersNbr = 0;
-  hfdcan1.Init.TxFifoQueueMode = FDCAN_TX_FIFO_OPERATION;
-  if (HAL_FDCAN_Init(&hfdcan1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN FDCAN1_Init 2 */
-
-  /* USER CODE END FDCAN1_Init 2 */
-
-}
-
-/**
   * @brief ICACHE Initialization Function
   * @param None
   * @retval None
@@ -390,16 +344,16 @@ static void MX_SPI1_Init(void)
   hspi1.Instance = SPI1;
   hspi1.Init.Mode = SPI_MODE_MASTER;
   hspi1.Init.Direction = SPI_DIRECTION_2LINES;
-  hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
+  hspi1.Init.DataSize = SPI_DATASIZE_4BIT;
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
-  hspi1.Init.NSS = SPI_NSS_SOFT;
+  hspi1.Init.NSS = SPI_NSS_HARD_INPUT;
   hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
   hspi1.Init.CRCPolynomial = 0x7;
-  hspi1.Init.NSSPMode = SPI_NSS_PULSE_DISABLE;
+  hspi1.Init.NSSPMode = SPI_NSS_PULSE_ENABLE;
   hspi1.Init.NSSPolarity = SPI_NSS_POLARITY_LOW;
   hspi1.Init.FifoThreshold = SPI_FIFO_THRESHOLD_01DATA;
   hspi1.Init.MasterSSIdleness = SPI_MASTER_SS_IDLENESS_00CYCLE;
@@ -525,36 +479,39 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOC, A3V3_LDO_EN_Pin|D3V3_LDO_EN_Pin|LED1_Pin|LED2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, Antenna_Switch_Pin|CAN1_AUX_Pin|CAN_STB1_Pin|CAN2_AUX_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(Antenna_Switch_GPIO_Port, Antenna_Switch_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, SX1262_RESET_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, SX1262_RESET_Pin|SX1262_BUSY_Pin|SX1262_DIO1_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : A3V3_LDO_EN_Pin D3V3_LDO_EN_Pin LED1_Pin LED2_Pin */
-  GPIO_InitStruct.Pin = A3V3_LDO_EN_Pin|D3V3_LDO_EN_Pin|LED1_Pin|LED2_Pin;
+  /*Configure GPIO pins : D3V3_LDO_EN_Pin LED1_Pin LED2_Pin */
+  GPIO_InitStruct.Pin = D3V3_LDO_EN_Pin|LED1_Pin|LED2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : Antenna_Switch_Pin CAN1_AUX_Pin CAN_STB1_Pin CAN2_AUX_Pin */
-  GPIO_InitStruct.Pin = Antenna_Switch_Pin|CAN1_AUX_Pin|CAN_STB1_Pin|CAN2_AUX_Pin;
+  /*Configure GPIO pin : A3V3_LDO_EN_Pin (pulled down as a backstop, in
+   * addition to being actively driven low, so the radio's analog 3V3
+   * rail can never be left floating enabled) */
+  GPIO_InitStruct.Pin = A3V3_LDO_EN_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : Antenna_Switch_Pin */
+  GPIO_InitStruct.Pin = Antenna_Switch_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  HAL_GPIO_Init(Antenna_Switch_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : SX1262_RESET_Pin */
-  GPIO_InitStruct.Pin = SX1262_RESET_Pin;
+  /*Configure GPIO pins : SX1262_RESET_Pin SX1262_BUSY_Pin SX1262_DIO1_Pin */
+  GPIO_InitStruct.Pin = SX1262_RESET_Pin|SX1262_BUSY_Pin|SX1262_DIO1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : SX1262_BUSY_Pin SX1262_DIO1_Pin (chip-driven inputs) */
-  GPIO_InitStruct.Pin = SX1262_BUSY_Pin|SX1262_DIO1_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
@@ -610,6 +567,7 @@ void MPU_Config(void)
 
 /**
   * @brief  This function is executed in case of error occurrence.
+  * @param None
   * @retval None
   */
 void Error_Handler(void)

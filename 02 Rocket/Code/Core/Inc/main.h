@@ -69,12 +69,6 @@ void Error_Handler(void);
 #define SX1262_BUSY_GPIO_Port GPIOB
 #define SX1262_DIO1_Pin GPIO_PIN_2
 #define SX1262_DIO1_GPIO_Port GPIOB
-#define CAN1_AUX_Pin GPIO_PIN_8
-#define CAN1_AUX_GPIO_Port GPIOA
-#define CAN_STB1_Pin GPIO_PIN_9
-#define CAN_STB1_GPIO_Port GPIOA
-#define CAN2_AUX_Pin GPIO_PIN_10
-#define CAN2_AUX_GPIO_Port GPIOA
 #define LED1_Pin GPIO_PIN_10
 #define LED1_GPIO_Port GPIOC
 #define LED2_Pin GPIO_PIN_11
