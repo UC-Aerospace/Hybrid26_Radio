@@ -20,6 +20,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "stm32h5xx_it.h"
+#include "tusb.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 /* USER CODE END Includes */
@@ -206,7 +207,9 @@ void USB_DRD_FS_IRQHandler(void)
   /* USER CODE BEGIN USB_DRD_FS_IRQn 0 */
 
   /* USER CODE END USB_DRD_FS_IRQn 0 */
-  HAL_PCD_IRQHandler(&hpcd_USB_DRD_FS);
+  /* TinyUSB owns the peripheral (see MX_USB_PCD_Init in main.c), so this
+   * forwards to its handler instead of HAL_PCD_IRQHandler. */
+  tusb_int_handler(0, true);
   /* USER CODE BEGIN USB_DRD_FS_IRQn 1 */
 
   /* USER CODE END USB_DRD_FS_IRQn 1 */

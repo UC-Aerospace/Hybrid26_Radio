@@ -51,16 +51,29 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     Core/Src/radio_test.c
     Core/Src/log.c
     Core/Src/can_radio_bridge.c
+    Core/Src/usb_cdc.c
+
+    # TinyUSB (device stack + CDC class + STM32 USB_DRD_FS port), vendored
+    # under Middlewares/tinyusb -- see usb_cdc.c for the application glue.
+    Middlewares/tinyusb/src/tusb.c
+    Middlewares/tinyusb/src/common/tusb_fifo.c
+    Middlewares/tinyusb/src/device/usbd.c
+    Middlewares/tinyusb/src/class/cdc/cdc_device.c
+    Middlewares/tinyusb/src/portable/st/stm32_fsdev/dcd_stm32_fsdev.c
+    Middlewares/tinyusb/src/portable/st/stm32_fsdev/fsdev_common.c
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
+    Middlewares/tinyusb/src
 )
 
 # Add project symbols (macros)
 target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined symbols
+    CFG_TUSB_MCU=OPT_MCU_STM32H5
+    CFG_TUSB_OS=OPT_OS_NONE
 )
 
 # Remove wrong libob.a library dependency when using cpp files

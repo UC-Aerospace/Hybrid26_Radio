@@ -23,6 +23,7 @@
 /* USER CODE BEGIN Includes */
 #include "scheduler.h"
 #include "log.h"
+#include "usb_cdc.h"
 // #include "radio.h"
 // #include "can_bus.h"
 // #include "radio_test.h"
@@ -158,11 +159,20 @@ int main(void)
   MX_USB_PCD_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
-  /* Defensive re-assert: guarantee the analog 3V3 LDO stays disabled at
-   * startup, regardless of what runs before this point. */
+  /* Defensive re-assert: guarantee the analog 3V3 LDO stays disabled and
+   * the digital 3V3 LDO stays enabled at startup, regardless of what runs
+   * before this point. */
   HAL_GPIO_WritePin(A3V3_LDO_EN_GPIO_Port, A3V3_LDO_EN_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(D3V3_LDO_EN_GPIO_Port, D3V3_LDO_EN_Pin, GPIO_PIN_SET);
 
   Scheduler_Init();
+
+  /* TinyUSB owns the USB_DRD_FS peripheral registers directly (see the
+   * comment in MX_USB_PCD_Init), so it's initialized here instead of via
+   * HAL_PCD_Init. UsbCdc_Task must run often for the port to enumerate and
+   * stay responsive; 1 ms is what a full-speed CDC port needs. */
+  UsbCdc_Init();
+  Scheduler_AddTask(UsbCdc_Task, 1);
 
   /* ------------------------------------------------------------------
    * BRING-UP TEST STAGES
@@ -437,22 +447,13 @@ static void MX_USB_PCD_Init(void)
 
   /* USER CODE END USB_Init 1 */
   hpcd_USB_DRD_FS.Instance = USB_DRD_FS;
-  hpcd_USB_DRD_FS.Init.dev_endpoints = 8;
-  hpcd_USB_DRD_FS.Init.speed = USBD_FS_SPEED;
-  hpcd_USB_DRD_FS.Init.phy_itface = PCD_PHY_EMBEDDED;
-  hpcd_USB_DRD_FS.Init.Sof_enable = DISABLE;
-  hpcd_USB_DRD_FS.Init.low_power_enable = DISABLE;
-  hpcd_USB_DRD_FS.Init.lpm_enable = DISABLE;
-  hpcd_USB_DRD_FS.Init.battery_charging_enable = DISABLE;
-  hpcd_USB_DRD_FS.Init.vbus_sensing_enable = DISABLE;
-  hpcd_USB_DRD_FS.Init.bulk_doublebuffer_enable = DISABLE;
-  hpcd_USB_DRD_FS.Init.iso_singlebuffer_enable = DISABLE;
-  if (HAL_PCD_Init(&hpcd_USB_DRD_FS) != HAL_OK)
-  {
-    Error_Handler();
-  }
   /* USER CODE BEGIN USB_Init 2 */
-
+  /* TinyUSB (see usb_cdc.c / UsbCdc_Init) drives the USB_DRD_FS registers
+   * itself via its own dcd_init(), so HAL_PCD_Init() is intentionally not
+   * called here -- calling both would fight over the same peripheral
+   * state. HAL_PCD_MspInit() still does the board bring-up TinyUSB needs
+   * first: PLL3Q clock config, VDDUSB, and the USB_DRD_FS NVIC IRQ. */
+  HAL_PCD_MspInit(&hpcd_USB_DRD_FS);
   /* USER CODE END USB_Init 2 */
 
 }
@@ -476,7 +477,10 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, A3V3_LDO_EN_Pin|D3V3_LDO_EN_Pin|LED1_Pin|LED2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOC, A3V3_LDO_EN_Pin|LED1_Pin|LED2_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level (digital 3V3 LDO enabled from the start) */
+  HAL_GPIO_WritePin(GPIOC, D3V3_LDO_EN_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(Antenna_Switch_GPIO_Port, Antenna_Switch_Pin, GPIO_PIN_RESET);
@@ -484,10 +488,19 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, SX1262_RESET_Pin|SX1262_BUSY_Pin|SX1262_DIO1_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : D3V3_LDO_EN_Pin LED1_Pin LED2_Pin */
-  GPIO_InitStruct.Pin = D3V3_LDO_EN_Pin|LED1_Pin|LED2_Pin;
+  /*Configure GPIO pins : LED1_Pin LED2_Pin */
+  GPIO_InitStruct.Pin = LED1_Pin|LED2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : D3V3_LDO_EN_Pin (pulled up as a backstop, in
+   * addition to being actively driven high and the external pull-up, so
+   * the digital 3V3 rail stays enabled from power-on) */
+  GPIO_InitStruct.Pin = D3V3_LDO_EN_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 

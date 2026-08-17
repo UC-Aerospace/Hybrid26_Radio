@@ -1,5 +1,6 @@
 #include "log.h"
 #include "main.h"
+#include "usb_cdc.h"
 #include <stdio.h>
 #include <stdarg.h>
 
@@ -27,4 +28,5 @@ void Log_Printf(const char *fmt, ...)
     }
 
     HAL_UART_Transmit(&huart4, (uint8_t *)buffer, (uint16_t)len, LOG_UART_TIMEOUT_MS);
+    UsbCdc_Write((uint8_t *)buffer, (uint32_t)len);
 }
