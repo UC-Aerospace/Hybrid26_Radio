@@ -408,6 +408,7 @@ void Radio_Task(void)
     if (s_state == RADIO_STATE_TX && (irq & SX126X_IRQ_TX_DONE))
     {
         Log_Printf("[%lu] RADIO TXDONE\r\n", HAL_GetTick());
+        HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
         s_state = RADIO_STATE_STANDBY;
     }
     else if (s_state == RADIO_STATE_RX && (irq & SX126X_IRQ_RX_DONE) && !(irq & SX126X_IRQ_CRC_ERR))

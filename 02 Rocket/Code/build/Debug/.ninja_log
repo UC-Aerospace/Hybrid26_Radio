@@ -6,12 +6,12 @@
 681	1303	8086593905364271	CMakeFiles/Code.dir/Core/Src/can_radio_bridge.c.obj	30d42f05a7bf29ae
 98	1568	8086593899521428	CMakeFiles/Code.dir/Core/Src/scheduler.c.obj	9adf5a6cf8733588
 468	2121	8086593903226422	CMakeFiles/Code.dir/Core/Src/log.c.obj	ada422bd82ad4fbb
-57	1627	8086593899100958	CMakeFiles/Code.dir/Core/Src/stm32h5xx_hal_msp.c.obj	c806e3bf81b0d68c
+79	1153	8093089856228779	CMakeFiles/Code.dir/Core/Src/stm32h5xx_hal_msp.c.obj	c806e3bf81b0d68c
 120	694	8086593899748528	CMakeFiles/Code.dir/Core/Src/can_bus.c.obj	a4fb00a89596c747
 1240	2702	8086586557738587	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h5xx.c.obj	4f9d791a9ac89237
-109	1990	8086593899634108	CMakeFiles/Code.dir/Core/Src/radio.c.obj	88bf98084d524aa0
+14	1238	8093095987485465	CMakeFiles/Code.dir/Core/Src/radio.c.obj	88bf98084d524aa0
 45	1728	8086593898961452	CMakeFiles/Code.dir/Core/Src/stm32h5xx_it.c.obj	9e7d21902e814561
-36	1689	8086593898875299	CMakeFiles/Code.dir/Core/Src/main.c.obj	bb583b4ec3d021e9
+59	1161	8093089856055952	CMakeFiles/Code.dir/Core/Src/main.c.obj	bb583b4ec3d021e9
 1255	2590	8086586557887776	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.c.obj	c16b18c81186de7b
 2615	7366	8085557593219020	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_fdcan.c.obj	627d70f107602b28
 2099	3934	8086586566335168	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.c.obj	c91bb8a0de3a8915
@@ -33,12 +33,12 @@
 4446	5990	8086586589804832	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd.c.obj	69da80898163d329
 4476	5863	8086586590103608	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd_ex.c.obj	f01b3afe6904b01e
 4581	6150	8086586591143776	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c.obj	9111f18e2abe786c
-2996	3723	8086593928515195	Code.elf	ca9080b74280583b
+1241	2274	8093095999834022	Code.elf	ca9080b74280583b
 44	150	8085557564024070	CMakeFiles/clean.additional	4c4647dd1043440e
 151	321	8085557565100568	clean	da16e34b6170d745
-35	933	8086602314425130	build.ninja	6c6fb5b4a244775a
-35	933	8086602313897887	C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake_install.cmake	6c6fb5b4a244775a
-35	933	8086602314091521	C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake/stm32cubemx/cmake_install.cmake	6c6fb5b4a244775a
+35	933	8093115239385154	build.ninja	6c6fb5b4a244775a
+35	933	8093115238173652	C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake_install.cmake	6c6fb5b4a244775a
+35	933	8093115238575234	C:/Users/tomki/Desktop/Hybrid26_Radio/02 Rocket/Code/build/Debug/cmake/stm32cubemx/cmake_install.cmake	6c6fb5b4a244775a
 721	1819	8086593905744736	CMakeFiles/Code.dir/Middlewares/tinyusb/src/tusb.c.obj	9ca8d23e635b224d
 1238	2278	8086593910922545	CMakeFiles/Code.dir/Middlewares/tinyusb/src/common/tusb_fifo.c.obj	cda34d511cceb797
 694	2390	8086593905496274	CMakeFiles/Code.dir/Core/Src/usb_cdc.c.obj	4f0a6d5c8d0511a3

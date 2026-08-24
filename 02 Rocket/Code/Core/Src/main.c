@@ -24,9 +24,9 @@
 #include "scheduler.h"
 #include "log.h"
 #include "usb_cdc.h"
-// #include "radio.h"
+#include "radio.h"
 // #include "can_bus.h"
-// #include "radio_test.h"
+#include "radio_test.h"
 // #include "can_radio_bridge.h"
 // #include <stdio.h>
 /* USER CODE END Includes */
@@ -152,10 +152,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_ICACHE_Init();
-  /* SPI1 stays uninitialized: no radio bring-up in this stage, and this
-   * avoids MX_SPI1_Init() silently reclaiming PA4 (SX1262 NSS) as a
-   * hardware SPI AF pin out from under the manual GPIO config below. */
-  // MX_SPI1_Init();
+  MX_SPI1_Init();
   MX_USB_PCD_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
@@ -200,12 +197,10 @@ int main(void)
    * "RADIO TXDONE" lines (and "RADIO RX" on the receiving board, if
    * it's also running and in range).
    * -------------------------------------------------------------- */
-  /*
   Radio_Init();
   RadioTest_Init();
   Scheduler_AddTask(Radio_Task, 5);
   Scheduler_AddTask(RadioTest_Task, 50);
-  */
 
   /* ---- STAGE 3: CAN bus sanity check --------------------------------
    * No radio. Confirms FDCAN1 + TCAN1046 bring-up: logs every CAN
@@ -354,11 +349,11 @@ static void MX_SPI1_Init(void)
   hspi1.Instance = SPI1;
   hspi1.Init.Mode = SPI_MODE_MASTER;
   hspi1.Init.Direction = SPI_DIRECTION_2LINES;
-  hspi1.Init.DataSize = SPI_DATASIZE_4BIT;
+  hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
-  hspi1.Init.NSS = SPI_NSS_HARD_INPUT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
+  hspi1.Init.NSS = SPI_NSS_SOFT;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_4;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -486,7 +481,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(Antenna_Switch_GPIO_Port, Antenna_Switch_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, SX1262_RESET_Pin|SX1262_BUSY_Pin|SX1262_DIO1_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, SX1262_RESET_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : LED1_Pin LED2_Pin */
   GPIO_InitStruct.Pin = LED1_Pin|LED2_Pin;
@@ -520,11 +515,18 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(Antenna_Switch_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : SX1262_RESET_Pin SX1262_BUSY_Pin SX1262_DIO1_Pin */
-  GPIO_InitStruct.Pin = SX1262_RESET_Pin|SX1262_BUSY_Pin|SX1262_DIO1_Pin;
+  /*Configure GPIO pin : SX1262_RESET_Pin */
+  GPIO_InitStruct.Pin = SX1262_RESET_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : SX1262_BUSY_Pin SX1262_DIO1_Pin (chip outputs, MCU
+   * only ever reads these) */
+  GPIO_InitStruct.Pin = SX1262_BUSY_Pin|SX1262_DIO1_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */

@@ -57,6 +57,24 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define LDO_3V3A_EN_Pin GPIO_PIN_13
+#define LDO_3V3A_EN_GPIO_Port GPIOC
+#define LDO_3V3D_EN_Pin GPIO_PIN_14
+#define LDO_3V3D_EN_GPIO_Port GPIOC
+#define ANT_SW_Pin GPIO_PIN_2
+#define ANT_SW_GPIO_Port GPIOA
+#define SX1262_CS_Pin GPIO_PIN_4
+#define SX1262_CS_GPIO_Port GPIOA
+#define SX1262_RESET_Pin GPIO_PIN_0
+#define SX1262_RESET_GPIO_Port GPIOB
+#define SX1262_BUSY_Pin GPIO_PIN_1
+#define SX1262_BUSY_GPIO_Port GPIOB
+#define SX1262_DIO1_Pin GPIO_PIN_2
+#define SX1262_DIO1_GPIO_Port GPIOB
+#define LED2_Pin GPIO_PIN_10
+#define LED2_GPIO_Port GPIOC
+#define LED1_Pin GPIO_PIN_11
+#define LED1_GPIO_Port GPIOC
 
 /* USER CODE BEGIN Private defines */
 
